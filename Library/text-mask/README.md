@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/text-mask/text-mask.svg?branch=master)](https://travis-ci.org/text-mask/text-mask)
 
-Text Mask是一个输入掩码库。它可以为手机、日期、货币、邮政编码、百分比、电子邮件创建输入掩码，和字面上的东西!
+Text Mask 是一个输入掩码库。它可以为手机、日期、货币、邮政编码、百分比、电子邮件创建输入掩码，和字面上的东西!
 
 它有方便的包装器提供给React, Angular 2, Ember, 和 Vue.
 

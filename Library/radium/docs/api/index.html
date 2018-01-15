@@ -1,0 +1,1176 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>API · React.js 及周边</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="tuzhu008">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../guides/" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    
+        <link rel="shortcut icon" href='../../../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../../../assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../../../assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    关于本书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../../GLOSSARY.html">
+            
+                <a href="../../../../GLOSSARY.html">
+            
+                    
+                    术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../../_Questions/faq.html">
+            
+                <a href="../../../../_Questions/faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考文档</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../../../Create-React-App/">
+            
+                <a href="../../../../Create-React-App/">
+            
+                    
+                    Create React App
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../../../Create-React-App/guide.html">
+            
+                <a href="../../../../Create-React-App/guide.html">
+            
+                    
+                    指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">核心库</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    redux
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    react-redux
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <a target="_blank" href="https://tuzhu008.github.io/gitbook-react-router_cn/">
+            
+                    
+                    react-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                    react-router-redux
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../../prop-types/">
+            
+                <a href="../../../prop-types/">
+            
+                    
+                    prop-types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+
+    
+        
+        <li class="header">常用库</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    isomorphic-fetch
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <span>
+            
+                    
+                    fetch
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <span>
+            
+                    
+                    react-autosuggest
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">组件库</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../../components/react-helmet/">
+            
+                <a href="../../../components/react-helmet/">
+            
+                    
+                    react-helmet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">CSS In JS</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../../styled-jsx/">
+            
+                <a href="../../../styled-jsx/">
+            
+                    
+                    styled-jsx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    radium
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="7.2.1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.1.2" data-path="../guides/">
+            
+                <a href="../guides/">
+            
+                    
+                    指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.1.3" data-path="../faq/">
+            
+                <a href="../faq/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../../../react-css-modules/">
+            
+                <a href="../../../react-css-modules/">
+            
+                    
+                    react-css-modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他库</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" >
+            
+                <span>
+            
+                    
+                    recharts
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" >
+            
+                <a target="_blank" href="https://tuzhu008.github.io/gitbook-awesome_libraries_cn/Library/text-mask/">
+            
+                    
+                    text-mark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../../../Next.js/">
+            
+                <a href="../../../Next.js/">
+            
+                    
+                    Next.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#radium-api"><b>1. </b>Radium API</a></li><ul><li><span class="title-icon "></span><a href="#sample-style-object"><b>1.1. </b>Sample Style Object</a></li><li><span class="title-icon "></span><a href="#radium"><b>1.2. </b>Radium</a></li><ul><li><span class="title-icon "></span><a href="#configmatchmedia"><b>1.2.1. </b>config.matchMedia</a></li><li><span class="title-icon "></span><a href="#configplugins"><b>1.2.2. </b>config.plugins</a></li><li><span class="title-icon "></span><a href="#configuseragent"><b>1.2.3. </b>config.userAgent</a></li></ul><li><span class="title-icon "></span><a href="#getstate"><b>1.3. </b>getState</a></li><li><span class="title-icon "></span><a href="#keyframes"><b>1.4. </b>keyframes</a></li><li><span class="title-icon "></span><a href="#plugins"><b>1.5. </b>Plugins</a></li><ul><li><span class="title-icon "></span><a href="#built-in-plugins"><b>1.5.1. </b>Built-in Plugins</a></li><li><span class="title-icon "></span><a href="#plugin-interface"><b>1.5.2. </b>Plugin Interface</a></li></ul><li><span class="title-icon "></span><a href="#style-component"><b>1.6. </b>Style Component</a></li><ul><li><span class="title-icon "></span><a href="#props"><b>1.6.1. </b>Props</a></li><li><span class="title-icon "></span><a href="#notes"><b>1.6.2. </b>Notes</a></li></ul><li><span class="title-icon "></span><a href="#styleroot-component"><b>1.7. </b>StyleRoot Component</a></li><li><span class="title-icon "></span><a href="#testmode"><b>1.8. </b>TestMode</a></li></ul></ul></div><a href="#radium-api" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="radium-api"><a name="radium-api" class="anchor-navigation-ex-anchor" href="#radium-api"><i class="fa fa-link" aria-hidden="true"></i></a>1. Radium API</h1>
+<p><strong>Table of Contents</strong></p>
+<ul>
+<li><a href="#sample-style-object">Sample Style Object</a></li>
+<li><a href="#radium">Radium</a><ul>
+<li><a href="#configmatchmedia">config.matchMedia</a></li>
+<li><a href="#configplugins">config.plugins</a></li>
+<li><a href="#configuseragent">config.userAgent</a></li>
+</ul>
+</li>
+<li><a href="#getstate">getState</a></li>
+<li><a href="#keyframes">keyframes</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#style-component">Style Component</a></li>
+<li><a href="#styleroot-component">StyleRoot Component</a></li>
+<li><a href="#testmode">TestMode</a></li>
+</ul>
+<h2 id="sample-style-object"><a name="sample-style-object" class="anchor-navigation-ex-anchor" href="#sample-style-object"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Sample Style Object</h2>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> styles <span class="token operator">=</span> <span class="token punctuation">{</span>
+  base<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    backgroundColor<span class="token punctuation">:</span> <span class="token string">&apos;#0074d9&apos;</span><span class="token punctuation">,</span>
+    border<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    borderRadius<span class="token punctuation">:</span> <span class="token string">&apos;0.3em&apos;</span><span class="token punctuation">,</span>
+    color<span class="token punctuation">:</span> <span class="token string">&apos;#fff&apos;</span><span class="token punctuation">,</span>
+    cursor<span class="token punctuation">:</span> <span class="token string">&apos;pointer&apos;</span><span class="token punctuation">,</span>
+    fontSize<span class="token punctuation">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+    outline<span class="token punctuation">:</span> <span class="token string">&apos;none&apos;</span><span class="token punctuation">,</span>
+    padding<span class="token punctuation">:</span> <span class="token string">&apos;0.4em 1em&apos;</span><span class="token punctuation">,</span>
+
+    <span class="token string">&apos;:hover&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      backgroundColor<span class="token punctuation">:</span> <span class="token string">&apos;#0088FF&apos;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token string">&apos;:focus&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      backgroundColor<span class="token punctuation">:</span> <span class="token string">&apos;#0088FF&apos;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token string">&apos;:active&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      backgroundColor<span class="token punctuation">:</span> <span class="token string">&apos;#005299&apos;</span><span class="token punctuation">,</span>
+      transform<span class="token punctuation">:</span> <span class="token string">&apos;translateY(2px)&apos;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment" spellcheck="true">// Media queries must start with @media, and follow the same syntax as CSS</span>
+    <span class="token string">&apos;@media (min-width: 992px)&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      padding<span class="token punctuation">:</span> <span class="token string">&apos;0.6em 1.2em&apos;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token string">&apos;@media (min-width: 1200px)&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      padding<span class="token punctuation">:</span> <span class="token string">&apos;0.8em 1.5em&apos;</span><span class="token punctuation">,</span>
+
+      <span class="token comment" spellcheck="true">// Media queries can also have nested :hover, :focus, or :active states</span>
+      <span class="token string">&apos;:hover&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        backgroundColor<span class="token punctuation">:</span> <span class="token string">&apos;#329FFF&apos;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  red<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    backgroundColor<span class="token punctuation">:</span> <span class="token string">&apos;#d90000&apos;</span><span class="token punctuation">,</span>
+
+    <span class="token string">&apos;:hover&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      backgroundColor<span class="token punctuation">:</span> <span class="token string">&apos;#FF0000&apos;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token string">&apos;:focus&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      backgroundColor<span class="token punctuation">:</span> <span class="token string">&apos;#FF0000&apos;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token string">&apos;:active&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      backgroundColor<span class="token punctuation">:</span> <span class="token string">&apos;#990000&apos;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="radium"><a name="radium" class="anchor-navigation-ex-anchor" href="#radium"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Radium</h2>
+<p><code>Radium</code> itself is a higher-order component, whose job is to:</p>
+<ul>
+<li>Provide initial state</li>
+<li>Process the <code>style</code> attribute after <code>render()</code></li>
+<li>Clean up any resources when the component unmounts</li>
+</ul>
+<p>Usage with <code>class</code>:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+
+MyComponent <span class="token operator">=</span> <span class="token function">Radium</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Usage with <code>createClass</code>:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> MyComponent <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createClass</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">Radium</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>Radium</code>&apos;s primary job is to apply interactive or media query styles, but even if you are not using any special styles, the higher order component will still:</p>
+<ul>
+<li>Merge arrays of styles passed as the <code>style</code> attribute</li>
+<li>Automatically vendor prefix the <code>style</code> object</li>
+</ul>
+<p>You can also pass a configuration object to <code>Radium</code>:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+
+MyComponent <span class="token operator">=</span> <span class="token function">Radium</span><span class="token punctuation">(</span><span class="token punctuation">{</span>matchMedia<span class="token punctuation">:</span> mockMatchMedia<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// or with createClass</span>
+
+<span class="token keyword">var</span> MyComponent <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createClass</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">Radium</span><span class="token punctuation">(</span><span class="token punctuation">{</span>matchMedia<span class="token punctuation">:</span> mockMatchMedia<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You may want to have project-wide Radium settings. Simply create a function that
+wraps Radium, and use it instead of <code>Radium</code>:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">function</span> <span class="token function">ConfiguredRadium</span><span class="token punctuation">(</span>component<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">Radium</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token punctuation">(</span>component<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// Usage</span>
+<span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+
+MyComponent <span class="token operator">=</span> <span class="token function">ConfiguredRadium</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Radium can be called any number of times with a config object, and later configs
+will be merged with and overwrite previous configs. That way, you can still
+override settings on a per-component basis:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">class</span> <span class="token class-name">MySpecialComponent</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+
+MySpecialComponent <span class="token operator">=</span> <span class="token function">ConfiguredRadium</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token punctuation">(</span>MySpecialComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Alternatively, if the config value can change every time the component is rendered (userAgent, for example), you can pass configuration to any component wrapped in <code>Radium</code> using the <code>radiumConfig</code> prop:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>App</span> <span class="token attr-name">radiumConfig</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>userAgent<span class="token punctuation">:</span> req<span class="token punctuation">.</span>headers<span class="token punctuation">[</span><span class="token string">&apos;user-agent&apos;</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<p>The config will be passed down via <a href="https://facebook.github.io/react/docs/context.html" target="_blank">context</a> to all child components. Fields in the <code>radiumConfig</code> prop or context will override those passed into the <code>Radium()</code> function.</p>
+<p>Possible configuration values:</p>
+<ul>
+<li><a href="#configmatchmedia"><code>matchMedia</code></a></li>
+<li><a href="#configplugins"><code>plugins</code></a></li>
+<li><a href="#configuseragent"><code>userAgent</code></a></li>
+</ul>
+<h3 id="configmatchmedia"><a name="configmatchmedia" class="anchor-navigation-ex-anchor" href="#configmatchmedia"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. config.matchMedia</h3>
+<p>Allows you to replace the <code>matchMedia</code> function that Radium uses. The default is <code>window.matchMedia</code>, and the primary use case for replacing it is to use media queries on the server. You&apos;ll have to send the width and height of the page to the server somehow, and then use a <a href="https://github.com/azazdeaz/match-media-mock" target="_blank">mock for match media</a> that implements the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia" target="_blank"><code>window.matchMedia</code> API</a>. Your code could look like this:</p>
+<p><strong>Server</strong></p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> ConfiguredRadium <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;./configured-radium&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> matchMediaMock <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;match-media-mock&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ConfiguredRadium<span class="token punctuation">.</span><span class="token function">setMatchMedia</span><span class="token punctuation">(</span>matchMediaMock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">&apos;/app/:width/:height&apos;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  matchMediaMock<span class="token punctuation">.</span><span class="token function">setConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&apos;screen&apos;</span><span class="token punctuation">,</span>
+    width<span class="token punctuation">:</span> req<span class="token punctuation">.</span>params<span class="token punctuation">.</span>width<span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> req<span class="token punctuation">.</span>params<span class="token punctuation">.</span>height<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// Your application code uses `ConfiguredRadium` instead of `Radium`</span>
+  <span class="token keyword">var</span> html <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">renderToString</span><span class="token punctuation">(</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>RadiumApp</span> <span class="token punctuation">/&gt;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span>html<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>ConfiguredRadium.js</strong></p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> Radium <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;radium&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> _matchMedia <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">ConfiguredRadium</span><span class="token punctuation">(</span>component<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">Radium</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    matchMedia<span class="token punctuation">:</span> _matchMedia
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>component<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+ConfiguredRadium<span class="token punctuation">.</span>setMatchMedia <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>matchMedia<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  _matchMedia <span class="token operator">=</span> matchMedia<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> ConfiguredRadium<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>MyComponent.js</strong></p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> ConfiguredRadium <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;./configured-radium&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+
+MyComponent <span class="token operator">=</span> <span class="token function">ConfiguredRadium</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>See <a href="https://github.com/FormidableLabs/radium/pull/146" target="_blank">#146</a> for more info.</p>
+<h3 id="configplugins"><a name="configplugins" class="anchor-navigation-ex-anchor" href="#configplugins"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. config.plugins</h3>
+<p><strong>Array&lt;Plugin&gt;</strong></p>
+<p>Replaces all plugins with the provided set. See <a href="#plugins">Plugins</a> for more information.</p>
+<p>Because the <code>plugins</code> config replaces all plugins, you have to provide the built-ins if you want to keep the default Radium functionality. A simple example of creating and adding a <code>styleLogger</code> plugin:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">function</span> <span class="token function">styleLogger</span><span class="token punctuation">(</span><span class="token punctuation">{</span>componentName<span class="token punctuation">,</span> style<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;Name: &apos;</span> <span class="token operator">+</span> componentName<span class="token punctuation">,</span> style<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">ConfiguredRadium</span><span class="token punctuation">(</span>component<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">Radium</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      Radium<span class="token punctuation">.</span>Plugins<span class="token punctuation">.</span>mergeStyleArray<span class="token punctuation">,</span>
+      Radium<span class="token punctuation">.</span>Plugins<span class="token punctuation">.</span>checkProps<span class="token punctuation">,</span>
+      Radium<span class="token punctuation">.</span>Plugins<span class="token punctuation">.</span>resolveMediaQueries<span class="token punctuation">,</span>
+      Radium<span class="token punctuation">.</span>Plugins<span class="token punctuation">.</span>resolveInteractionStyles<span class="token punctuation">,</span>
+      Radium<span class="token punctuation">.</span>Plugins<span class="token punctuation">.</span>keyframes<span class="token punctuation">,</span>
+      Radium<span class="token punctuation">.</span>Plugins<span class="token punctuation">.</span>visited<span class="token punctuation">,</span>
+      Radium<span class="token punctuation">.</span>Plugins<span class="token punctuation">.</span>removeNestedStyles<span class="token punctuation">,</span>
+      Radium<span class="token punctuation">.</span>Plugins<span class="token punctuation">.</span>prefix<span class="token punctuation">,</span>
+      styleLogger<span class="token punctuation">,</span>
+      Radium<span class="token punctuation">.</span>Plugins<span class="token punctuation">.</span>checkProps<span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>component<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// Usage</span>
+<span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+
+MyComponent <span class="token operator">=</span> <span class="token function">ConfiguredRadium</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You will typically want to put plugins before the final <code>checkProps</code> so that you can still benefit from the checks it provides. If your plugin might produce other pseudo-style blocks, like <code>@media</code> consumed by <code>resolveMediaQueries</code> or <code>:hover</code> consumed by <code>resolveInteractionStyles</code>, you would want to have your plugin run before those plugins.</p>
+<p>You can of course omit any or all of the built-in plugins, and replace them with your own version. For example, you may want to omit <code>Radium.Plugins.prefix</code> entirely if you aren&apos;t using vendor prefixes or are using a <a href="https://github.com/UXtemple/babel-plugin-react-autoprefix" target="_blank">compile-time solution</a> instead.</p>
+<h3 id="configuseragent"><a name="configuseragent" class="anchor-navigation-ex-anchor" href="#configuseragent"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. config.userAgent</h3>
+<p><strong>string</strong></p>
+<p>Set the user agent passed to <a href="https://github.com/rofrischmann/inline-style-prefixer" target="_blank">inline-style-prefixer</a> to perform prefixing on style objects. Mainly used during server rendering, passed in via the <code>radiumConfig</code> prop. Using express:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>App</span> <span class="token attr-name">radiumConfig</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>userAgent<span class="token punctuation">:</span> req<span class="token punctuation">.</span>headers<span class="token punctuation">[</span><span class="token string">&apos;user-agent&apos;</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<p>For a complete example, see <a href="https://github.com/FormidableLabs/radium/blob/master/examples/server.js" target="_blank">examples/server.js</a>.</p>
+<h2 id="getstate"><a name="getstate" class="anchor-navigation-ex-anchor" href="#getstate"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. getState</h2>
+<p><strong>Radium.getState(state, elementKey, value)</strong></p>
+<p><em>Note: <code>getState</code> will not work in a stateless component, because even though Radium maintains the state internally, the stateless component does not have access to it, by definition</em></p>
+<p>Query Radium&apos;s knowledge of the browser state for a given element key. This is particularly useful if you would like to set styles for one element when another element is in a particular state, e.g. show a message when a button is hovered.</p>
+<p>Note that the target element specified by <code>elementKey</code> must have the state you&apos;d like to check defined in its style object so that Radium knows to add the handlers. It can be empty, e.g. <code>&apos;:hover&apos;: {}</code>.</p>
+<p>Parameters:</p>
+<ul>
+<li><strong>state</strong> - you&apos;ll usually pass <code>this.state</code>, but sometimes you may want to pass a previous state, like in <code>shouldComponentUpdate</code>, <code>componentWillUpdate</code>, and <code>componentDidUpdate</code></li>
+<li><strong>elementKey</strong> - if you used multiple elements, pass the same <code>key=&quot;&quot;</code> or <code>ref=&quot;&quot;</code>. If you only have one element, you can leave it blank (<code>&apos;main&apos;</code> will be inferred)</li>
+<li><strong>value</strong> - one of the following: <code>:active</code>, <code>:focus</code>, and <code>:hover</code></li>
+<li><strong>returns</strong> <code>true</code> or <code>false</code></li>
+</ul>
+<p>Usage:</p>
+<pre class="language-"><code class="lang-jsx">Radium<span class="token punctuation">.</span><span class="token function">getState</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">,</span> <span class="token string">&apos;button&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;:hover&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="keyframes"><a name="keyframes" class="anchor-navigation-ex-anchor" href="#keyframes"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. keyframes</h2>
+<p><strong>Radium.keyframes(keyframes, [name])</strong></p>
+<p>Create a keyframes animation for use in an inline style. <code>keyframes</code> returns an opaque object you must assign to the <code>animationName</code> property. <code>Plugins.keyframes</code> detects the object and adds CSS to the Radium root&apos;s style sheet. Radium will automatically apply vendor prefixing to keyframe styles. In order to use <code>keyframes</code>, you must wrap your application in the <a href="#styleroot-component"><code>StyleRoot component</code></a>.</p>
+<p><code>keyframes</code> takes an optional second parameter, a <code>name</code> to prepend to the animation&apos;s name to aid in debugging.</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">class</span> <span class="token class-name">Spinner</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  render <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>inner<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+Spinner <span class="token operator">=</span> <span class="token function">Radium</span><span class="token punctuation">(</span>Spinner<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> pulseKeyframes <span class="token operator">=</span> Radium<span class="token punctuation">.</span><span class="token function">keyframes</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token string">&apos;0%&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>width<span class="token punctuation">:</span> <span class="token string">&apos;10%&apos;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;50%&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>width<span class="token punctuation">:</span> <span class="token string">&apos;50%&apos;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;100%&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>width<span class="token punctuation">:</span> <span class="token string">&apos;10%&apos;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">&apos;pulse&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> styles <span class="token operator">=</span> <span class="token punctuation">{</span>
+  inner<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// Use a placeholder animation name in `animation`</span>
+    animation<span class="token punctuation">:</span> <span class="token string">&apos;x 3s ease 0s infinite&apos;</span><span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">// Assign the result of `keyframes` to `animationName`</span>
+    animationName<span class="token punctuation">:</span> pulseKeyframes<span class="token punctuation">,</span>
+    background<span class="token punctuation">:</span> <span class="token string">&apos;blue&apos;</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token string">&apos;4px&apos;</span><span class="token punctuation">,</span>
+    margin<span class="token punctuation">:</span> <span class="token string">&apos;0 auto&apos;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="plugins"><a name="plugins" class="anchor-navigation-ex-anchor" href="#plugins"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. Plugins</h2>
+<h3 id="built-in-plugins"><a name="built-in-plugins" class="anchor-navigation-ex-anchor" href="#built-in-plugins"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1. Built-in Plugins</h3>
+<p>Almost everything that Radium does, except iteration, is implemented as a plugin. Radium ships with a base set of plugins, all of which can be accessed via <code>Radium.Plugins.pluginName</code>. They are called in the following order:</p>
+<ul>
+<li><code>mergeStyleArray</code> - If the <code>style</code> attribute is an array, intelligently merge each style object in the array. Deep merges nested style objects, such as <code>:hover</code>.</li>
+<li><code>checkProps</code> - Performs basic correctness checks, such as ensuring you do not mix longhand and shorthand properties.</li>
+<li><code>resolveMediaQueries</code> - Handles style entries like <code>&apos;@media (...)&apos;: { ... }</code>, applying them only when the appropriate media query is hit. Can be configured using <a href="#configmatchmedia">config.matchMedia</a>.</li>
+<li><code>resolveInteractionStyles</code> - Handles <code>&apos;:hover&apos;</code>, <code>&apos;:focus&apos;</code>, and <code>&apos;:active&apos;</code> styles.</li>
+<li><code>prefix</code> - Uses in-browser detection and a small mapping to add vendor prefixes to CSS properties and values.</li>
+<li><code>checkProps</code> - Same as above, just run after everything else.</li>
+</ul>
+<h3 id="plugin-interface"><a name="plugin-interface" class="anchor-navigation-ex-anchor" href="#plugin-interface"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.2. Plugin Interface</h3>
+<p>All plugins are functions accept a PluginConfig, and return a PluginResult. The annotated flow types follow. A plugin is called once for every <em>rendered element</em> that has a <code>style</code> attribute, for example the <code>div</code> and <code>span</code> in <code>return <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation">=</span>{...}</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation">=</span>{...}</span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>;</code>.</p>
+<p><strong>PluginConfig</strong></p>
+<pre class="language-"><code class="lang-jsx">type PluginConfig <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// Adds a chunk of css to the root style sheet</span>
+  addCSS<span class="token punctuation">:</span> <span class="token punctuation">(</span>css<span class="token punctuation">:</span> string<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>remove<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">void</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// Helper function when adding CSS</span>
+  appendImportantToEachValue<span class="token punctuation">:</span> <span class="token punctuation">(</span>style<span class="token punctuation">:</span> Object<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Object<span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// May not be readable if code has been minified</span>
+  componentName<span class="token punctuation">:</span> string<span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// The Radium configuration</span>
+  config<span class="token punctuation">:</span> Config<span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// Converts an object of CSS rules to a string, for use with addCSS</span>
+  cssRuleSetToString<span class="token punctuation">:</span> <span class="token punctuation">(</span>
+    selector<span class="token punctuation">:</span> string<span class="token punctuation">,</span>
+    rules<span class="token punctuation">:</span> Object<span class="token punctuation">,</span>
+    userAgent<span class="token punctuation">:</span> <span class="token operator">?</span>string<span class="token punctuation">,</span>
+  <span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> string<span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// Retrieve the value of a field on the component</span>
+  getComponentField<span class="token punctuation">:</span> <span class="token punctuation">(</span>key<span class="token punctuation">:</span> string<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> any<span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// Retrieve the value of a field global to the Radium module</span>
+  <span class="token comment" spellcheck="true">// Used so that tests can easily clear global state.</span>
+  getGlobalState<span class="token punctuation">:</span> <span class="token punctuation">(</span>key<span class="token punctuation">:</span> string<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> any<span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// Retrieve the value of some state specific to the rendered element.</span>
+  <span class="token comment" spellcheck="true">// Requires the element to have a unique key or ref or for an element key</span>
+  <span class="token comment" spellcheck="true">// to be passed in.</span>
+  getState<span class="token punctuation">:</span> <span class="token punctuation">(</span>stateKey<span class="token punctuation">:</span> string<span class="token punctuation">,</span> elementKey<span class="token operator">?</span><span class="token punctuation">:</span> string<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> any<span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// Helper function when adding CSS</span>
+  hash<span class="token punctuation">:</span> <span class="token punctuation">(</span>data<span class="token punctuation">:</span> string<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> string<span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// Returns true if the value is a nested style object</span>
+  isNestedStyle<span class="token punctuation">:</span> <span class="token punctuation">(</span>value<span class="token punctuation">:</span> any<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> bool<span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// Access to the mergeStyles utility</span>
+  mergeStyles<span class="token punctuation">:</span> <span class="token punctuation">(</span>styles<span class="token punctuation">:</span> Array<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Object<span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// The props of the rendered element. This can be changed by each plugin,</span>
+  <span class="token comment" spellcheck="true">// and successive plugins will see the result of previous plugins.</span>
+  props<span class="token punctuation">:</span> Object<span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// Calls setState on the component with the given key and value.</span>
+  <span class="token comment" spellcheck="true">// By default this is specific to the rendered element, but you can override</span>
+  <span class="token comment" spellcheck="true">// by passing in the `elementKey` parameter.</span>
+  setState<span class="token punctuation">:</span> <span class="token punctuation">(</span>stateKey<span class="token punctuation">:</span> string<span class="token punctuation">,</span> value<span class="token punctuation">:</span> any<span class="token punctuation">,</span> elementKey<span class="token operator">?</span><span class="token punctuation">:</span> string<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">void</span><span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// The style prop of the rendered element. This can be changed by each plugin,</span>
+  <span class="token comment" spellcheck="true">// and successive plugins will see the result of previous plugins. Kept</span>
+  <span class="token comment" spellcheck="true">// separate from `props` for ease of use.</span>
+  style<span class="token punctuation">:</span> Object<span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// uses the exenv npm module</span>
+  ExecutionEnvironment<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    canUseEventListeners<span class="token punctuation">:</span> bool<span class="token punctuation">,</span>
+    canUseDOM<span class="token punctuation">:</span> bool<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>PluginResult</strong></p>
+<pre class="language-"><code class="lang-jsx">type PluginResult <span class="token operator">=</span> <span class="token operator">?</span><span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// Merged into the component directly. Useful for storing things for which you</span>
+  <span class="token comment" spellcheck="true">// don&apos;t need to re-render, event subscriptions, for instance.</span>
+  componentFields<span class="token operator">?</span><span class="token punctuation">:</span> Object<span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// Merged into a Radium controlled global state object. Use this instead of</span>
+  <span class="token comment" spellcheck="true">// module level state for ease of clearing state between tests.</span>
+  globalState<span class="token operator">?</span><span class="token punctuation">:</span> Object<span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// Merged into the rendered element&apos;s props.</span>
+  props<span class="token operator">?</span><span class="token punctuation">:</span> Object<span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// Replaces (not merged into) the rendered element&apos;s style property.</span>
+  style<span class="token operator">?</span><span class="token punctuation">:</span> Object<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>If your plugin consumes custom style blocks, it should merge any applicable style blocks and strip any others out of the style object before returning to avoid errors farther down. For example, a hypothetical <code>enumPropResolver</code> might know how to resolve keys of the form <code>&apos;propName=value&apos;</code>, such that if <code>this.props.propName === &apos;value&apos;</code>, it will merge in that style object. <code>enumPropResolver</code> should then also strip any other keys that will not be merged. Thus, if this style object is passed to <code>enumPropResolver</code>, and <code>this.props.type === &apos;error&apos;</code>:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token punctuation">{</span>
+  <span class="token string">&apos;type=success&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>color<span class="token punctuation">:</span> <span class="token string">&apos;blue&apos;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;type=error&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>color<span class="token punctuation">:</span> <span class="token string">&apos;red&apos;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;type=warning&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>color<span class="token punctuation">:</span> <span class="token string">&apos;yellow&apos;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>enumPropResolver</code> should then return an object with the style property equal to:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token punctuation">{</span>
+  color<span class="token punctuation">:</span> <span class="token string">&apos;red&apos;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="style-component"><a name="style-component" class="anchor-navigation-ex-anchor" href="#style-component"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. Style Component</h2>
+<p>The <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Style</span><span class="token punctuation">&gt;</span></span></code> component renders an HTML <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span></code> tag containing a set of CSS rules. Using it, you can define an optional <code>scopeSelector</code> that all selectors in the resulting <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span></code> element will include.</p>
+<p>Without the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Style</span><span class="token punctuation">&gt;</span></span></code> component, it is prohibitively difficult to write a <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span></code> element in React. To write a normal <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span></code> element, you need to write your CSS as a multiline string inside of the element. <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Style</span><span class="token punctuation">&gt;</span></span></code> simplifies this process, and adds prefixing and the ability to scope selectors.</p>
+<p>If you include a <code>scopeSelector</code>, you can include CSS rules that should apply to that selector as well as any nested selectors. For example, the following</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Style</span>
+  <span class="token attr-name">scopeSelector</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>.scoping-class<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">rules</span><span class="token attr-value"><span class="token punctuation">=</span>{{</span>
+    <span class="token attr-name"><span class="token namespace">color:</span></span> <span class="token attr-name">&apos;blue&apos;,</span>
+    <span class="token attr-name"><span class="token namespace">span:</span></span> <span class="token attr-name">{</span>
+      <span class="token attr-name"><span class="token namespace">fontFamily:</span></span> <span class="token attr-name">&apos;Lucida</span> <span class="token attr-name">Console,</span> <span class="token attr-name">Monaco,</span> <span class="token attr-name">monospace&apos;</span>
+    <span class="token attr-name">}</span>
+  <span class="token attr-name">}}</span>
+<span class="token punctuation">/&gt;</span></span>
+</code></pre><p>will return:</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+<span class="token selector">.scoping-class</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token string">&apos;blue&apos;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.scoping-class span</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&apos;Lucida Console, Monaco, monospace&apos;</span>
+<span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre><h3 id="props"><a name="props" class="anchor-navigation-ex-anchor" href="#props"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.1. Props</h3>
+<h4 id="rules"><a name="rules" class="anchor-navigation-ex-anchor" href="#rules"><i class="fa fa-link" aria-hidden="true"></i></a><a name="rules" class="plugin-anchor" href="#rules"><i class="fa fa-link" aria-hidden="true"></i></a>rules</h4>
+<p>An object of CSS rules to render. Each key of the rules object is a CSS selector and the value is an object of styles. If rules is empty, the component will render nothing.</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> Radium <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;radium&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> Style <span class="token operator">=</span> Radium<span class="token punctuation">.</span>Style<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// or</span>
+<span class="token keyword">import</span> Radium<span class="token punctuation">,</span> <span class="token punctuation">{</span> Style <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;radium&apos;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Style</span> <span class="token attr-name">rules</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+  body<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    margin<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    fontFamily<span class="token punctuation">:</span> <span class="token string">&apos;Helvetica Neue, Helvetica, Arial, sans-serif&apos;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  html<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    background<span class="token punctuation">:</span> <span class="token string">&apos;#ccc&apos;</span><span class="token punctuation">,</span>
+    fontSize<span class="token punctuation">:</span> <span class="token string">&apos;100%&apos;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mediaQueries<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&apos;(min-width: 550px)&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      html<span class="token punctuation">:</span>  <span class="token punctuation">{</span>
+        fontSize<span class="token punctuation">:</span> <span class="token string">&apos;120%&apos;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span></span><span class="token attr-name">,</span>
+    <span class="token attr-name"><span class="token namespace">&apos;(min-width:</span></span> <span class="token attr-name"><span class="token namespace">1200px)&apos;:</span></span> <span class="token attr-name">{</span>
+      <span class="token attr-name"><span class="token namespace">html:</span></span>  <span class="token attr-name">{</span>
+        <span class="token attr-name"><span class="token namespace">fontSize:</span></span> <span class="token attr-name">&apos;140%&apos;</span>
+      <span class="token attr-name">}</span>
+    <span class="token attr-name">}</span>
+  <span class="token attr-name">},</span>
+  <span class="token attr-name">&apos;h1,</span> <span class="token attr-name">h2,</span> <span class="token attr-name"><span class="token namespace">h3&apos;:</span></span> <span class="token attr-name">{</span>
+    <span class="token attr-name"><span class="token namespace">fontWeight:</span></span> <span class="token attr-name">&apos;bold&apos;</span>
+  <span class="token attr-name">}</span>
+<span class="token attr-name">}}</span> <span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<h4 id="scopeselector"><a name="scopeselector" class="anchor-navigation-ex-anchor" href="#scopeselector"><i class="fa fa-link" aria-hidden="true"></i></a><a name="scopeselector" class="plugin-anchor" href="#scopeselector"><i class="fa fa-link" aria-hidden="true"></i></a>scopeSelector</h4>
+<p>A string that any included selectors in <code>rules</code> will be appended to. Use to scope styles in the component to a particular element. A good use case might be to generate a unique ID for a component to scope any styles to the particular component that owns the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Style</span><span class="token punctuation">&gt;</span></span></code> component instance.</p>
+<pre class="language-"><code class="lang-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>TestClass<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Style</span>
+  <span class="token attr-name">scopeSelector</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>.TestClass<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">rules</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+      h1<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        fontSize<span class="token punctuation">:</span> <span class="token string">&apos;2em&apos;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span></span><span class="token attr-name">}</span>
+  <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h3 id="notes"><a name="notes" class="anchor-navigation-ex-anchor" href="#notes"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.2. Notes</h3>
+<p>Some style properties, like <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content" target="_blank"><code>content</code></a>, allow quoted strings or keywords as values. Because all non-numerical property values are written
+as strings in Radium style objects, you must explicitly add quotes to string value for these properties: <code>content: &quot;&apos;Hello World!&apos;&quot;</code>.</p>
+<h2 id="styleroot-component"><a name="styleroot-component" class="anchor-navigation-ex-anchor" href="#styleroot-component"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. StyleRoot Component</h2>
+<p><em>Props: Accepts all props valid on <code>div</code> and optional <code>radiumConfig</code></em></p>
+<p>Usually wrapped around your top-level App component. StyleRoot wraps its children in a plain div followed by the root style sheet. Radium plugins, like keyframes and media queries, use this style sheet to inject CSS at runtime. Because the style sheet appears after your rendered elements, it is populated correctly during a server render.</p>
+<p>StyleRoot transfers all of its props to the rendered <code>div</code>, and is itself wrapped in Radium, so you can pass it inline styles or <code>radiumConfig</code>.</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">import</span> <span class="token punctuation">{</span>StyleRoot<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;radium&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>StyleRoot</span><span class="token punctuation">&gt;</span></span>
+        <span class="token operator">...</span> rest <span class="token keyword">of</span> your app <span class="token operator">...</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>StyleRoot</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>Note:</strong> StyleRoot passes the style-keeper (the object where styles are collected) down to other Radium components via context. Because of this, you cannot use keyframes or media queries in <em>direct children</em> of the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>StyleRoot</span><span class="token punctuation">&gt;</span></span></code>, e.g.</p>
+<pre class="language-"><code class="lang-jsx"><span class="token comment" spellcheck="true">// COUNTEREXAMPLE, DOES NOT WORK</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>StyleRoot</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token string">&apos;@media print&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>color<span class="token punctuation">:</span> <span class="token string">&apos;black&apos;</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token attr-name">}</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>StyleRoot</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>You&apos;ll have to break out that piece into a proper component:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">class</span> <span class="token class-name">BodyText</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token string">&apos;@media print&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>color<span class="token punctuation">:</span> <span class="token string">&apos;black&apos;</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token attr-name">}</span> <span class="token punctuation">/&gt;</span></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>StyleRoot</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>BodyText</span><span class="token punctuation">&gt;</span></span><span class="token operator">...</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>BodyText</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>StyleRoot</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="testmode"><a name="testmode" class="anchor-navigation-ex-anchor" href="#testmode"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. TestMode</h2>
+<p>Directly off the main Radium object you can access <code>TestMode</code>, used to control internal Radium state and behavior during tests. It is only available in non-production builds.</p>
+<ul>
+<li><code>Radium.TestMode.clearState()</code> - clears the global Radium state, currently only the cache of media query listeners.</li>
+<li><code>Radium.TestMode.enable()</code> - enables &quot;test mode&quot;, which doesn&#x2019;t throw or warn as much. Currently it just doesn&#x2019;t throw when using addCSS without StyleRoot.</li>
+<li><code>Radium.TestMode.disable()</code> - disables &quot;test mode&quot;</li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; tuzhu008 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-01-12 23:12:31
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 文档">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../guides/" class="navigation navigation-next " aria-label="Next page: 指南">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"API","level":"7.2.1.1","depth":3,"next":{"title":"指南","level":"7.2.1.2","depth":3,"path":"Library/radium/docs/guides/README.md","ref":"Library/radium/docs/guides/README.md","articles":[]},"previous":{"title":"文档","level":"7.2.1","depth":2,"path":"Library/radium/docs/README.md","ref":"Library/radium/docs/README.md","articles":[{"title":"API","level":"7.2.1.1","depth":3,"path":"Library/radium/docs/api/README.md","ref":"Library/radium/docs/api/README.md","articles":[]},{"title":"指南","level":"7.2.1.2","depth":3,"path":"Library/radium/docs/guides/README.md","ref":"Library/radium/docs/guides/README.md","articles":[]},{"title":"API","level":"7.2.1.3","depth":3,"path":"Library/radium/docs/faq/README.md","ref":"Library/radium/docs/faq/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchors","anchor-navigation-ex","favicon","copy-code-button","alerts","splitter","book-summary-scroll-position-saver","include-codeblock","ace","prism","prism-themes","-highlight","tbfed-pagefooter","github","sectionx","livereload"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tuzhu008 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"ace":{},"github":{"url":"https://github.com/tuzhu008"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"night","family":"serif","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"prism-themes":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"acefull","theme":"tomorrow","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"tuzhu008","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js 及周边","language":"zh-hans","gitbook":"*","description":"React.js 自我学习"},"file":{"path":"Library/radium/docs/api/README.md","mtime":"2018-01-12T15:12:31.869Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-15T11:39:22.533Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

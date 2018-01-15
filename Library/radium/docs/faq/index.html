@@ -1,0 +1,837 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>API · React.js 及周边</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="tuzhu008">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../../react-css-modules/" />
+    
+    
+    <link rel="prev" href="../guides/" />
+    
+
+    
+        <link rel="shortcut icon" href='../../../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../../../assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../../../assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    关于本书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../../GLOSSARY.html">
+            
+                <a href="../../../../GLOSSARY.html">
+            
+                    
+                    术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../../_Questions/faq.html">
+            
+                <a href="../../../../_Questions/faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考文档</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../../../Create-React-App/">
+            
+                <a href="../../../../Create-React-App/">
+            
+                    
+                    Create React App
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../../../Create-React-App/guide.html">
+            
+                <a href="../../../../Create-React-App/guide.html">
+            
+                    
+                    指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">核心库</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    redux
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    react-redux
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <a target="_blank" href="https://tuzhu008.github.io/gitbook-react-router_cn/">
+            
+                    
+                    react-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                    react-router-redux
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../../prop-types/">
+            
+                <a href="../../../prop-types/">
+            
+                    
+                    prop-types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+
+    
+        
+        <li class="header">常用库</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    isomorphic-fetch
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <span>
+            
+                    
+                    fetch
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <span>
+            
+                    
+                    react-autosuggest
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">组件库</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../../components/react-helmet/">
+            
+                <a href="../../../components/react-helmet/">
+            
+                    
+                    react-helmet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">CSS In JS</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../../styled-jsx/">
+            
+                <a href="../../../styled-jsx/">
+            
+                    
+                    styled-jsx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    radium
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1.1" data-path="../api/">
+            
+                <a href="../api/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.1.2" data-path="../guides/">
+            
+                <a href="../guides/">
+            
+                    
+                    指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.2.1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../../../react-css-modules/">
+            
+                <a href="../../../react-css-modules/">
+            
+                    
+                    react-css-modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他库</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" >
+            
+                <span>
+            
+                    
+                    recharts
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" >
+            
+                <a target="_blank" href="https://tuzhu008.github.io/gitbook-awesome_libraries_cn/Library/text-mask/">
+            
+                    
+                    text-mark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../../../Next.js/">
+            
+                <a href="../../../Next.js/">
+            
+                    
+                    Next.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#frequently-asked-questions"><b>1. </b>Frequently Asked Questions</a></li><ul><li><span class="title-icon "></span><a href="#how-do-i-use-pseudo-selectors-like-checked-last-before-or-after"><b>1.1. </b>How do I use pseudo-selectors like :checked, :last, :before, or :after?</a></li><li><span class="title-icon "></span><a href="#how-can-i-use-reactcsstransitiongroup-without-any-classes"><b>1.2. </b>How can I use ReactCSSTransitionGroup without any classes?</a></li><li><span class="title-icon "></span><a href="#how-can-i-use-radium-with-jsbin"><b>1.3. </b>How can I use Radium with jsbin?</a></li><li><span class="title-icon "></span><a href="#can-i-use-my-favourite-csslesssass-syntax"><b>1.4. </b>Can I use my favourite CSS/LESS/SASS syntax?</a></li><li><span class="title-icon "></span><a href="#can-i-use-radium-with-bootstrap"><b>1.5. </b>Can I use Radium with Bootstrap?</a></li><li><span class="title-icon "></span><a href="#why-doesnt-radium-work-on-react-routers-link-or-react-bootstraps-button-or-someothercomponent"><b>1.6. </b>Why doesn&apos;t Radium work on react-router&apos;s Link, or react-bootstrap&apos;s Button, or SomeOtherComponent?</a></li><li><span class="title-icon "></span><a href="#how-can-i-get-rid-of-useragent-warnings-in-tests"><b>1.7. </b>How can I get rid of userAgent warnings in tests?</a></li><li><span class="title-icon "></span><a href="#why-do-react-warnings-have-the-wrong-component-name"><b>1.8. </b>Why do React warnings have the wrong component name?</a></li><li><span class="title-icon "></span><a href="#why-does-the-browser-state-of-a-child-element-not-reset-after-unmounting-and-remounting"><b>1.9. </b>Why does the browser state of a child element not reset after unmounting and remounting?</a></li></ul></ul></div><a href="#frequently-asked-questions" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="frequently-asked-questions"><a name="frequently-asked-questions" class="anchor-navigation-ex-anchor" href="#frequently-asked-questions"><i class="fa fa-link" aria-hidden="true"></i></a>1. Frequently Asked Questions</h1>
+<ul>
+<li><a href="#how-do-i-use-pseudo-selectors-like-checked-last-before-or-after">How do I use pseudo-selectors like <code>:checked</code>, <code>:last</code>, <code>:before</code>, or <code>:after</code>?</a></li>
+<li><a href="#how-can-i-use-reactcsstransitiongroup-without-any-classes">How can I use <code>ReactCSSTransitionGroup</code> without any classes?</a></li>
+<li><a href="#how-can-i-use-radium-with-jsbin">How can I use Radium with jsbin?</a></li>
+<li><a href="#can-i-use-my-favourite-csslesssass-syntax">Can I use my favourite CSS/LESS/SASS syntax?</a></li>
+<li><a href="#can-i-use-radium-with-bootstrap">Can I use Radium with Bootstrap?</a></li>
+<li><a href="#why-doesnt-radium-work-on-react-routers-link-or-react-bootstraps-button-or-someothercomponent">Why doesn&apos;t Radium work on react-router&apos;s Link, or react-bootstrap&apos;s Button, or SomeOtherComponent?</a></li>
+<li><a href="#how-can-i-get-rid-of-useragent-warnings-in-tests">How can I get rid of <code>userAgent</code> warnings in tests?</a></li>
+<li><a href="#why-do-react-warnings-have-the-wrong-component-name">Why do React warnings have the wrong component name?</a></li>
+<li><a href="#why-does-the-browser-state-of-a-child-element-not-reset-after-unmounting-and-remounting">Why does the browser state of a child element not reset after unmounting and remounting?</a></li>
+</ul>
+<h2 id="how-do-i-use-pseudo-selectors-like-checked-last-before-or-after"><a name="how-do-i-use-pseudo-selectors-like-checked-last-before-or-after" class="anchor-navigation-ex-anchor" href="#how-do-i-use-pseudo-selectors-like-checked-last-before-or-after"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. How do I use pseudo-selectors like :checked, :last, :before, or :after?</h2>
+<p>Radium only provides the interactivity pseudo-selectors <code>:hover</code>, <code>:active</code>, and <code>:focus</code>. You need to use JavaScript logic to implement the others. To implement <code>:checked</code> for example:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">class</span> <span class="token class-name">CheckForBold</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>isChecked<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  _onChange <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>isChecked<span class="token punctuation">:</span> <span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isChecked<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>fontWeight<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isChecked <span class="token operator">?</span> <span class="token string">&apos;bold&apos;</span> <span class="token punctuation">:</span> <span class="token string">&apos;normal&apos;</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+          <span class="token attr-name">checked</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isChecked<span class="token punctuation">}</span></span>
+          <span class="token attr-name">onChange</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>_onChange<span class="token punctuation">}</span></span>
+          <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>checkbox<span class="token punctuation">&quot;</span></span>
+        <span class="token punctuation">/&gt;</span></span>
+      <span class="token punctuation">{</span><span class="token string">&apos; &apos;</span><span class="token punctuation">}</span>Check <span class="token keyword">for</span> bold
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Instead of <code>:first</code> and <code>:last</code>, change behavior during array iteration. Note that the border property is broken down into parts to avoid complications as in issue <a href="https://github.com/FormidableLabs/radium/issues/95" target="_blank">#95</a>.</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> droids <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token string">&apos;R2-D2&apos;</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;C-3PO&apos;</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;Huyang&apos;</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;Droideka&apos;</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;Probe Droid&apos;</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">DroidList</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>padding<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token punctuation">{</span>droids<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>droid<span class="token punctuation">,</span> index<span class="token punctuation">,</span> arr<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">key</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span></span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+            borderColor<span class="token punctuation">:</span> <span class="token string">&apos;black&apos;</span><span class="token punctuation">,</span>
+            borderRadius<span class="token punctuation">:</span> index <span class="token operator">===</span> <span class="token number">0</span> <span class="token operator">?</span> <span class="token string">&apos;12px 12px 0 0&apos;</span> <span class="token punctuation">:</span>
+              index <span class="token operator">===</span> <span class="token punctuation">(</span>arr<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token string">&apos;0 0 12px 12px&apos;</span> <span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">,</span>
+            borderStyle<span class="token punctuation">:</span> <span class="token string">&apos;solid&apos;</span><span class="token punctuation">,</span>
+            borderWidth<span class="token punctuation">:</span> index <span class="token operator">===</span> <span class="token punctuation">(</span>arr<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token string">&apos;1px&apos;</span> <span class="token punctuation">:</span> <span class="token string">&apos;1px 1px 0 1px&apos;</span><span class="token punctuation">,</span>
+            cursor<span class="token punctuation">:</span> <span class="token string">&apos;pointer&apos;</span><span class="token punctuation">,</span>
+            listStyle<span class="token punctuation">:</span> <span class="token string">&apos;none&apos;</span><span class="token punctuation">,</span>
+            padding<span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+            <span class="token string">&apos;:hover&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+              background<span class="token punctuation">:</span> <span class="token string">&apos;#eee&apos;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span></span><span class="token attr-name">}</span><span class="token punctuation">&gt;</span></span>
+           <span class="token punctuation">{</span>droid<span class="token punctuation">}</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token punctuation">)</span><span class="token punctuation">}</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+DroidList <span class="token operator">=</span> <span class="token function">Radium</span><span class="token punctuation">(</span>DroidList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Instead of <code>:before</code> and <code>:after</code>, add extra elements when rendering your HTML.</p>
+<h2 id="how-can-i-use-reactcsstransitiongroup-without-any-classes"><a name="how-can-i-use-reactcsstransitiongroup-without-any-classes" class="anchor-navigation-ex-anchor" href="#how-can-i-use-reactcsstransitiongroup-without-any-classes"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. How can I use ReactCSSTransitionGroup without any classes?</h2>
+<p>Try out the experimental <a href="https://github.com/adambbecker/react-style-transition-group" target="_blank"><code>ReactStyleTransitionGroup</code></a> instead.</p>
+<h2 id="how-can-i-use-radium-with-jsbin"><a name="how-can-i-use-radium-with-jsbin" class="anchor-navigation-ex-anchor" href="#how-can-i-use-radium-with-jsbin"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. How can I use Radium with jsbin?</h2>
+<p>To get the latest version, drop this into the HTML:</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://unpkg.com/radium/dist/radium.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>We also recommend changing the JavaScript language to ES6/Babel.</p>
+<h2 id="can-i-use-my-favourite-csslesssass-syntax"><a name="can-i-use-my-favourite-csslesssass-syntax" class="anchor-navigation-ex-anchor" href="#can-i-use-my-favourite-csslesssass-syntax"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Can I use my favourite CSS/LESS/SASS syntax?</h2>
+<p>Yes, with the help of the <a href="https://github.com/halt-hammerzeit/react-styling" target="_blank">react-styling</a> module, which requires <a href="https://babeljs.io/docs/learn-es2015/#template-strings" target="_blank">template strings</a>. Using react-styling you can write your styles in any syntax you like (curly braces or tabs, CSS, LESS/SASS, anything will do).</p>
+<p>The example from the main Readme (using regular CSS syntax)</p>
+<pre class="language-"><code class="lang-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Button</span> <span class="token attr-name">kind</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Radium Button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Button</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">import</span> styler <span class="token keyword">from</span> <span class="token string">&apos;react-styling/flat&apos;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Button</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> propTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+    kind<span class="token punctuation">:</span> PropTypes<span class="token punctuation">.</span><span class="token function">oneOf</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;primary&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;warning&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span>isRequired
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span>style<span class="token punctuation">[</span><span class="token template-string"><span class="token string">`button_</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>kind<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>children<span class="token punctuation">}</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+Button <span class="token operator">=</span> <span class="token function">Radium</span><span class="token punctuation">(</span>Button<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> style <span class="token operator">=</span> styler<span class="token template-string"><span class="token string">`
+  .button {
+    color: #fff;
+
+    :hover {
+      background: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token function">color</span><span class="token punctuation">(</span><span class="token string">&apos;#0074d9&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">lighten</span><span class="token punctuation">(</span><span class="token number">0.2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">hexString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+    }
+
+    &amp;.primary {
+      background: #0074D9;
+    }
+
+    &amp;.warning {
+      background: #FF4136;
+    }
+  }
+`</span></span>
+</code></pre>
+<p>You can find a more advanced example in the <a href="https://github.com/halt-hammerzeit/react-styling#radium" target="_blank">react-styling readme</a>.</p>
+<h2 id="can-i-use-radium-with-bootstrap"><a name="can-i-use-radium-with-bootstrap" class="anchor-navigation-ex-anchor" href="#can-i-use-radium-with-bootstrap"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. Can I use Radium with Bootstrap?</h2>
+<p>See issue <a href="https://github.com/FormidableLabs/radium/issues/323" target="_blank">#323</a> for discussion.</p>
+<h2 id="why-doesnt-radium-work-on-react-routers-link-or-react-bootstraps-button-or-someothercomponent"><a name="why-doesnt-radium-work-on-react-routers-link-or-react-bootstraps-button-or-someothercomponent" class="anchor-navigation-ex-anchor" href="#why-doesnt-radium-work-on-react-routers-link-or-react-bootstraps-button-or-someothercomponent"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. Why doesn&apos;t Radium work on react-router&apos;s Link, or react-bootstrap&apos;s Button, or SomeOtherComponent?</h2>
+<p>Radium doesn&apos;t mess with the <code>style</code> prop of non-DOM elements. This includes thin wrappers like <code>react-router</code>&apos;s <code>Link</code> component. We can&apos;t assume that a custom component will use <code>style</code> the same way DOM elements do. For instance, it could be a string enum to select a specific style. In order for resolving <code>style</code> on a custom element to work, that element needs to actually pass that <code>style</code> prop to the DOM element underneath, in addition to passing down all the event handlers (<code>onMouseEnter</code>, etc). Since Radium has no control over the implementation of other components, resolving styles on them is not safe.</p>
+<p>A workaround is to wrap your custom component in Radium, even if you do not have the source, like this:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> Link <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;react-router&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>Link<span class="token punctuation">;</span>
+Link <span class="token operator">=</span> <span class="token function">Radium</span><span class="token punctuation">(</span>Link<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Huge thanks to <a href="https://github.com/mairh" target="_blank">@mairh</a> for coming up with this idea in issue <a href="https://github.com/FormidableLabs/radium/issues/324" target="_blank">#324</a>.</p>
+<p>We are also exploring adding a mechanism to bypass Radium&apos;s check, see issue <a href="https://github.com/FormidableLabs/radium/issues/258" target="_blank">#258</a>.</p>
+<h2 id="how-can-i-get-rid-of-useragent-warnings-in-tests"><a name="how-can-i-get-rid-of-useragent-warnings-in-tests" class="anchor-navigation-ex-anchor" href="#how-can-i-get-rid-of-useragent-warnings-in-tests"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. How can I get rid of userAgent warnings in tests?</h2>
+<p>You might see warnings like this when testing React components that use Radium:</p>
+<pre class="language-"><code>Radium: userAgent should be supplied for server-side rendering. See https://github.com/FormidableLabs/radium/tree/master
+/docs/api#radium for more information.
+Either the global navigator was undefined or an invalid userAgent was provided. Using a valid userAgent? Please let us k
+now and create an issue at https://github.com/rofrischmann/inline-style-prefixer/issues
+</code></pre><p>This isn&apos;t an issue if you run your tests in a browser-like environment such as jsdom or PhantomJS, but if you just run them in Node, there will be no userAgent defined. In your test setup, you can define one:</p>
+<pre class="language-"><code class="lang-jsx">global<span class="token punctuation">.</span>navigator <span class="token operator">=</span> <span class="token punctuation">{</span>userAgent<span class="token punctuation">:</span> <span class="token string">&apos;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2454.85 Safari/537.36&apos;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Make sure it is a real user agent that <code>inline-style-prefixer</code> recognizes, or you&apos;ll still get the second error. The above UA is <a href="https://github.com/rofrischmann/inline-style-prefixer/blob/master/test/prefixer-test.js" target="_blank">Chrome 49 from the <code>inline-style-prefixer</code> tests</a>.</p>
+<h2 id="why-do-react-warnings-have-the-wrong-component-name"><a name="why-do-react-warnings-have-the-wrong-component-name" class="anchor-navigation-ex-anchor" href="#why-do-react-warnings-have-the-wrong-component-name"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. Why do React warnings have the wrong component name?</h2>
+<p>You may see the name &quot;Constructor&quot; instead of your component name, for example: &quot;Warning: Failed propType: Invalid prop <code>onClick</code> of type <code>function</code> supplied to <code>Constructor</code>, expected <code>string</code>.&quot; or &quot;Warning: Each child in an array or iterator should have a unique &quot;key&quot; prop. Check the render method of <code>Constructor</code>.&quot;</p>
+<p>Your transpiler is probably not able to set the <code>displayName</code> property of the component correctly, which can happen if you wrap <code>React.createClass</code> immediately with <code>Radium</code>, e.g. <code>var Button = Radium(React.createClass({ ... }));</code>. Instead, wrap your component afterward, ex. <code>Button = Radium(Button);</code>,  or when exporting, ex. <code>module.exports = Radium(Button);</code>, or set <code>displayName</code> manually.</p>
+<h2 id="why-does-the-browser-state-of-a-child-element-not-reset-after-unmounting-and-remounting"><a name="why-does-the-browser-state-of-a-child-element-not-reset-after-unmounting-and-remounting" class="anchor-navigation-ex-anchor" href="#why-does-the-browser-state-of-a-child-element-not-reset-after-unmounting-and-remounting"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. Why does the browser state of a child element not reset after unmounting and remounting?</h2>
+<p>If you have an element that takes a browser state (e.g. <code>:active</code>, <code>:hover</code>, <code>:focus</code>), you need to give it a unique <code>key</code> prop. There is a case where if you only have a single element in your component that takes an interactive style, you do not need to provide a <code>key</code>; however, if you remove the element and show it again, it will maintain it&apos;s state, which is usually unexpected behavior. To fix this, simply give it a custom <code>key</code> prop.</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; tuzhu008 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-01-12 23:12:31
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../guides/" class="navigation navigation-prev " aria-label="Previous page: 指南">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../../react-css-modules/" class="navigation navigation-next " aria-label="Next page: react-css-modules">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"API","level":"7.2.1.3","depth":3,"next":{"title":"react-css-modules","level":"7.3","depth":1,"path":"Library/react-css-modules/README.md","ref":"Library/react-css-modules/README.md","articles":[]},"previous":{"title":"指南","level":"7.2.1.2","depth":3,"path":"Library/radium/docs/guides/README.md","ref":"Library/radium/docs/guides/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchors","anchor-navigation-ex","favicon","copy-code-button","alerts","splitter","book-summary-scroll-position-saver","include-codeblock","ace","prism","prism-themes","-highlight","tbfed-pagefooter","github","sectionx","livereload"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tuzhu008 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"ace":{},"github":{"url":"https://github.com/tuzhu008"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"night","family":"serif","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"prism-themes":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"acefull","theme":"tomorrow","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"tuzhu008","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js 及周边","language":"zh-hans","gitbook":"*","description":"React.js 自我学习"},"file":{"path":"Library/radium/docs/faq/README.md","mtime":"2018-01-12T15:12:31.869Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-15T11:39:22.533Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
