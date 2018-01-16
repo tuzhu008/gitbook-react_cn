@@ -13,44 +13,39 @@ Next.js 是一个极简的框架，用于服务端渲染 React 应用程序
 
 ---
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<!-- https://github.com/thlorenz/doctoc -->
+<!-- TOC depthFrom:1 depthTo:3 withLinks:1 updateOnSave:0 orderedList:0 -->
 
-- [How to use](#how-to-use)
-  - [Setup](#setup)
-  - [Automatic code splitting](#automatic-code-splitting)
-  - [CSS](#css)
-    - [Built-in CSS support](#built-in-css-support)
-    - [CSS-in-JS](#css-in-js)
-  - [Static file serving (e.g.: images)](#static-file-serving-eg-images)
-  - [Populating `<head>`](#populating-head)
-  - [Fetching data and component lifecycle](#fetching-data-and-component-lifecycle)
-  - [Routing](#routing)
-    - [With `<Link>`](#with-link)
-    - [Imperatively](#imperatively)
-      - [Router Events](#router-events)
-      - [Shallow Routing](#shallow-routing)
-    - [Using a Higher Order Component](#using-a-higher-order-component)
-  - [Prefetching Pages](#prefetching-pages)
-    - [With `<Link>`](#with-link-1)
-    - [Imperatively](#imperatively-1)
-  - [Custom server and routing](#custom-server-and-routing)
-  - [Dynamic Import](#dynamic-import)
-  - [Custom `<Document>`](#custom-document)
-  - [Custom error handling](#custom-error-handling)
-  - [Custom configuration](#custom-configuration)
-  - [Customizing webpack config](#customizing-webpack-config)
-  - [Customizing babel config](#customizing-babel-config)
-  - [CDN support with Asset Prefix](#cdn-support-with-asset-prefix)
-- [Production deployment](#production-deployment)
-- [Static HTML export](#static-html-export)
+- [如何使用](#如何使用)
+	- [设置](#设置)
+	- [自动代码分隔](#自动代码分隔)
+	- [CSS](#css)
+	- [静态文件服务 (如：images)](#static)
+	- [填充 `<head>`](#head)
+	- [获取数据和组件生命周期](#获取数据和组件生命周期)
+	- [路由选择](#路由选择)
+	- [页面预获取](#prefetching-pages)
+	- [自定义服务器和路由](#custom-server-and-routing)
+	- [动态导入](#动态导入)
+	- [自定义 `<Document>`](#user-content-custom-document)
+  - [自定义错误处理](#自定义错误处理)
+	- [重用内置的错误页面](#重用内置的错误页面)
+	- [自定义配置](#custom-configuration)
+	- [自定义 webpack 配置](#自定义-webpack-配置)
+	- [自定义 babel 配置](#自定义-babel-配置)
+	- [使用 Asset 前缀来支持 CDN](#使用-asset-前缀来支持-cdn)
+- [生产和部署](#生产和部署)
+- [静态 HTML 出口](#静态-html-出口)
+	- [用法](#用法)
+	- [限制](#限制)
 - [Recipes](#recipes)
-- [FAQ](#faq)
-- [Contributing](#contributing)
-- [Authors](#authors)
+- [常见问题](#常见问题)
+- [贡献](#贡献)
+- [作者](#作者)
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<!-- /TOC -->
+
+
+# Next.js
 
 ## 如何使用
 
@@ -115,7 +110,7 @@ export default () =>
 
 <p><details>
   <summary><b>示例</b></summary>
-  <ul><li><a href="./examples/basic-css">Basic css</a></li></ul>
+  <ul><li><a href="https://github.com/zeit/next.js/tree/canary/examples//basic-css">Basic css</a></li></ul>
 </details></p>
 
 我们打包 [styled-jsx](https://github.com/zeit/styled-jsx) 来提供独立作用域的 CSS。 其目的是支持类似于 Web 组件的 “shadow CSS”，不幸的是， web 组件 它不支持服务器渲染，[只支持 JS](https://github.com/w3c/webcomponents/issues/71)。
@@ -154,7 +149,7 @@ export default () =>
   <summary>
     <b>示例</b>
     </summary>
-  <ul><li><a href="./examples/with-styled-components">Styled components</a></li><li><a href="./examples/with-styletron">Styletron</a></li><li><a href="./examples/with-glamor">Glamor</a></li><li><a href="./examples/with-glamorous">Glamorous</a></li><li><a href="./examples/with-cxs">Cxs</a></li><li><a href="./examples/with-aphrodite">Aphrodite</a></li><li><a href="./examples/with-fela">Fela</a></li></ul>
+  <ul><li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-styled-components">Styled components</a></li><li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-styletron">Styletron</a></li><li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-glamor">Glamor</a></li><li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-glamorous">Glamorous</a></li><li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-cxs">Cxs</a></li><li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-aphrodite">Aphrodite</a></li><li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-fela">Fela</a></li></ul>
 </details></p>
 
 可以使用任何现有的 CSS-in-JS 解决方案。最简单的一种是内嵌样式:
@@ -166,7 +161,7 @@ export default () => <p style={{ color: 'red' }}>hi there</p>
 要使用更复杂的 CSS-in-JS 解决方案，您通常需要实现对服务器端渲染的样式刷新。我们允许您定义您自己的[自定义 `<Document>`](#user-content-custom-document)，该组件封装了每个页面。
 
 
-### 静态文件服务 (如：images)
+### 静态文件服务 (如：images) {#static}
 
 在项目根目录创建一个名为 `static` 的文件夹。然后，你就可以在你的代码中使用 `/static` URL 引用这些文件。
 
@@ -174,13 +169,13 @@ export default () => <p style={{ color: 'red' }}>hi there</p>
 export default () => <img src="/static/my-image.png" />
 ```
 
-### Populating `<head>`
+### 填充 `<head>` {#head}
 
 <p><details>
   <summary><b>示例</b></summary>
   <ul>
-    <li><a href="./examples/head-elements">Head elements</a></li>
-    <li><a href="./examples/layout-component">Layout component</a></li>
+    <li><a href="https://github.com/zeit/next.js/tree/canary/examples//head-elements">Head elements</a></li>
+    <li><a href="https://github.com/zeit/next.js/tree/canary/examples//layout-component">Layout component</a></li>
   </ul>
 </details></p>
 
@@ -221,11 +216,11 @@ export default () => (
 
 _注意: 在卸载组件时，`<head>` 的内容会被清除，因此确保了每个页面都完全定义了它的 `<head>` 所需要的内容，而不需要对其他页面添加什么假设。_
 
-### 获取数据和组件生命周期
+### 获取数据和组件生命周期 {#fetching-data-and-component-lifecycle}
 
 <p><details>
   <summary><b>示例</b></summary>
-  <ul><li><a href="./examples/data-fetch">Data fetch</a></li></ul>
+  <ul><li><a href="https://github.com/zeit/next.js/tree/canary/examples//data-fetch">Data fetch</a></li></ul>
 </details></p>
 
 当你需要状态、生命周期钩子或**初始数据填充**时，你可以暴露一个 `React.Component`(而是不是像上面的无状态函数):
@@ -300,7 +295,7 @@ export default Page
 <p><details>
   <summary><b>示例</b></summary>
   <ul>
-    <li><a href="./examples/hello-world">Hello World</a></li>
+    <li><a href="https://github.com/zeit/next.js/tree/canary/examples//hello-world">Hello World</a></li>
   </ul>
 </details></p>
 
@@ -349,7 +344,7 @@ __注意: 使用 [`<Link prefetch>`](#prefetching-pages) 来最大化性能，�
 <p><details>
   <summary><b>示例</b></summary>
   <ul>
-    <li><a href="./examples/with-url-object-routing">With URL Object Routing</a></li>
+    <li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-url-object-routing">With URL Object Routing</a></li>
   </ul>
 </details></p>
 
@@ -425,13 +420,13 @@ export default ({ href, name }) =>
   </Link>
 ```
 
-#### 命令式地
+#### 命令式地 {#imperatively}
 
 <p><details>
   <summary><b>示例</b></summary>
   <ul>
-    <li><a href="./examples/using-router">Basic routing</a></li>
-    <li><a href="./examples/with-loading">With a page loading indicator</a></li>
+    <li><a href="https://github.com/zeit/next.js/tree/canary/examples//using-router">Basic routing</a></li>
+    <li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-loading">With a page loading indicator</a></li>
   </ul>
 </details></p>
 
@@ -537,7 +532,7 @@ Router.onAppUpdated = nextUrl => {
 <p><details>
   <summary><b>示例</b></summary>
   <ul>
-    <li><a href="./examples/with-shallow-routing">Shallow Routing</a></li>
+    <li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-shallow-routing">Shallow Routing</a></li>
   </ul>
 </details></p>
 
@@ -575,7 +570,7 @@ componentWillReceiveProps(nextProps) {
 <p><details>
   <summary><b>示例</b></summary>
   <ul>
-    <li><a href="./examples/using-with-router">Using the `withRouter` utility</a></li>
+    <li><a href="https://github.com/zeit/next.js/tree/canary/examples//using-with-router">Using the `withRouter` utility</a></li>
   </ul>
 </details></p>
 
@@ -608,13 +603,13 @@ export default withRouter(ActiveLink)
 上面的 `router` 对象有一个类似于 [`next/router`](#imperatively) 的 API。
 
 
-### 页面预获取
+### 页面预获取 {#prefetching-pages}
 
 (这个特性仅用于生产环境)
 
 <p><details>
   <summary><b>示例</b></summary>
-  <ul><li><a href="./examples/with-prefetching">Prefetching</a></li></ul>
+  <ul><li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-prefetching">Prefetching</a></li></ul>
 </details></p>
 
 Next.js 有一个允许你预获取页面的 API。
@@ -670,17 +665,17 @@ export default ({ url }) =>
   </div>
 ```
 
-### 自定义服务器和路由
+### 自定义服务器和路由 {#custom-server-and-routing}
 
 <p><details>
   <summary><b>示例</b></summary>
   <ul>
-    <li><a href="./examples/custom-server">Basic custom server</a></li>
-    <li><a href="./examples/custom-server-express">Express integration</a></li>
-    <li><a href="./examples/custom-server-hapi">Hapi integration</a></li>
-    <li><a href="./examples/custom-server-koa">Koa integration</a></li>
-    <li><a href="./examples/parameterized-routing">Parameterized routing</a></li>
-    <li><a href="./examples/ssr-caching">SSR caching</a></li>
+    <li><a href="https://github.com/zeit/next.js/tree/canary/examples//custom-server">Basic custom server</a></li>
+    <li><a href="https://github.com/zeit/next.js/tree/canary/examples//custom-server-express">Express integration</a></li>
+    <li><a href="https://github.com/zeit/next.js/tree/canary/examples//custom-server-hapi">Hapi integration</a></li>
+    <li><a href="https://github.com/zeit/next.js/tree/canary/examples//custom-server-koa">Koa integration</a></li>
+    <li><a href="https://github.com/zeit/next.js/tree/canary/examples//parameterized-routing">Parameterized routing</a></li>
+    <li><a href="https://github.com/zeit/next.js/tree/canary/examples//ssr-caching">SSR caching</a></li>
   </ul>
 </details></p>
 
@@ -767,11 +762,10 @@ module.exports = {
 <p><details>
   <summary><b>示例</b></summary>
   <ul>
-    <li><a href="./examples/with-dynamic-import">With Dynamic Import</a></li>
+    <li><a href="https://github.com/zeit/next.js/blob/canary/examples/with-dynamic-import">With Dynamic Import</a></li>
   </ul>
 </details></p>
 
-Next.js supports TC39 [dynamic import proposal](https://github.com/tc39/proposal-dynamic-import) for JavaScript.
 
 Next.js 支持 JavaScript 的 TC39 [动态导入(dynamic import)建议](https://github.com/tc39/proposal-dynamic-import)。
 
@@ -863,12 +857,12 @@ const HelloBundle = dynamic({
 export default () => <HelloBundle title="Dynamic Bundle" />
 ```
 
-### 自定义 `<Document>`
+### 自定义 `<Document>` {#user-content-custom-document}
 
 <p><details>
   <summary><b>示例</b></summary>
-  <ul><li><a href="./examples/with-styled-components">Styled components custom document</a></li></ul>
-  <ul><li><a href="./examples/with-amp">Google AMP</a></li></ul>
+  <ul><li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-styled-components">Styled components custom document</a></li></ul>
+  <ul><li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-amp">Google AMP</a></li></ul>
 </details></p>
 
 `Next.js` 中的页面跳过了周围文档标记的定义。例如，您从来没有包含过`<html>`, `<body>`等等。要覆盖这个默认行为，您必须在 `./pages/_document.js` 中创建一个文件，您可以扩展 `Document` 类:
@@ -968,7 +962,7 @@ export default class Page extends React.Component {
 
 > 如果你有一个自定义的错误页面，你需要导入自己的 `_error` 组件来代替`next/error`
 
-### 自定义配置
+### 自定义配置 {#custom-configuration}
 
 为了自定义 Next.js 高级行为，你可以创建在项目根目录创建一个 `next.config.js`（`pages/` 和 `package.json` 旁边）。
 
@@ -1014,7 +1008,7 @@ module.exports = {
 
 <p><details>
   <summary><b>示例</b></summary>
-  <ul><li><a href="./examples/with-webpack-bundle-analyzer">Custom webpack bundle analyzer</a></li></ul>
+  <ul><li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-webpack-bundle-analyzer">Custom webpack bundle analyzer</a></li></ul>
 </details></p>
 
 为了扩展 `webpack` 的用法，你可以定义一个函数，通过 `next.config.js` 来扩展它的配置。
@@ -1046,7 +1040,7 @@ module.exports = {
 
 <p><details>
   <summary><b>示例</b></summary>
-  <ul><li><a href="./examples/with-custom-babel-config">Custom babel configuration</a></li></ul>
+  <ul><li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-custom-babel-config">Custom babel configuration</a></li></ul>
 </details></p>
 
 为了能够扩展 `babel` 的使用，你可以在应用的根目录简单的定义一个 `.babelrc` 文件。这个文件是可选的。
@@ -1116,7 +1110,7 @@ Next.js 可以被部署到其他托管解决方案。请看一看 wiki 的 ['Dep
 
 <p><details>
   <summary><b>示例</b></summary>
-  <ul><li><a href="./examples/with-static-export">Static export</a></li></ul>
+  <ul><li><a href="https://github.com/zeit/next.js/tree/canary/examples//with-static-export">Static export</a></li></ul>
 </details></p>
 
 这是一种运行 Next.js 应用的方法，将其作为是一个不使用 Node.js 服务器的独立的静态应用。导出的应用程序支持几乎所有的 Next.js 的特性。包括动态 url、预获取、预加载和动态导入。
@@ -1239,11 +1233,11 @@ now
   <summary>如何使用 SASS / SCSS / LESS 这样的 CSS 预处理器?</summary>
   Next.js 打包了 [styled-jsx](https://github.com/zeit/styled-jsx) 来支持作用域 css。但是你可以在 Next 用用程序种使用任何 CSS 预处理器，下面是一些示例：
 
-  - [使用外部有限作用域的CSS](./examples/with-external-scoped-css)
-  - [with-scoped-stylesheets-and-postcss](./examples/with-scoped-stylesheets-and-postcss)
-  - [使用全局样式表](./examples/with-global-stylesheet)
-  - [with-styled-jsx-scss](./examples/with-styled-jsx-scss)
-  - [with-styled-jsx-plugins](./examples/with-styled-jsx-plugins)
+  - [使用外部有限作用域的CSS](https://github.com/zeit/next.js/tree/canary/examples//with-external-scoped-css)
+  - [with-scoped-stylesheets-and-postcss](https://github.com/zeit/next.js/tree/canary/examples//with-scoped-stylesheets-and-postcss)
+  - [使用全局样式表](https://github.com/zeit/next.js/tree/canary/examples//with-global-stylesheet)
+  - [with-styled-jsx-scss](https://github.com/zeit/next.js/tree/canary/examples//with-styled-jsx-scss)
+  - [with-styled-jsx-plugins](https://github.com/zeit/next.js/tree/canary/examples//with-styled-jsx-plugins)
 
 </details>
 
@@ -1292,14 +1286,14 @@ Next.js 的特殊之处在于:
 <details>
   <summary>可以和 GraphQL 一起使用吗?</summary>
 
-没问题。这里有一个 [Apollo](./examples/with-apollo) 的示例.
+没问题。这里有一个 [Apollo](https://github.com/zeit/next.js/tree/canary/examples//with-apollo) 的示例.
 
 </details>
 
 <details>
 <summary>可以和 Redux 一起使用吗?</summary>
 
-没问题。这里有一个 [示例](./examples/with-redux)
+没问题。这里有一个 [示例](https://github.com/zeit/next.js/tree/canary/examples//with-redux)
 </details>
 
 <details>
@@ -1313,7 +1307,7 @@ Next.js 的特殊之处在于:
 <summary>我可以使用我最喜欢的 Javascript 库或工具箱吗?</summary>
 
 自从我们的第一次发布以来，我们已经有了**很多**的示例贡献，您可以在
-[示例](./examples)目录中查看它们。
+[示例](https://github.com/zeit/next.js/tree/canary/examples/)目录中查看它们。
 </details>
 
 <details>
@@ -1333,7 +1327,7 @@ PHP 的易于使用是一个巨大的灵感。我们觉得 Next.js 是适合许�
 
 ## 贡献
 
-请查看 [contributing.md](./contributing.md)
+请查看 [contributing.md](https://github.com/zeit/next.js/blob/canary/contributing.md)
 
 ## 作者
 

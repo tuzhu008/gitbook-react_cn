@@ -43,10 +43,22 @@
 
 * [react-helmet](Library/components/react-helmet/README.md)
 
+### CSS In JS
+
+* [styled-jsx](Library/styled-jsx/README.md)
+
+* [radium](Library/radium/README.md)
+  - [文档](Library/radium/docs/README.md)
+    - [指南](Library/radium/docs/guides/README.md)
+    - [API](Library/radium/docs/api/README.md)
+    - [常见问题](Library/radium/docs/faq/README.md)
+
+* [react-css-modules](Library/react-css-modules/README.md)
+
 ### 其他库
 
 * [recharts]()
 
-* [text-mark]()
+* [text-mark](https://tuzhu008.github.io/gitbook-awesome_libraries_cn/Library/text-mask/)
 
-* [Next.js](Library/Next.js/readme.md)
+* [Next.js](Library/Next.js/README.md)
