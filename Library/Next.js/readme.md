@@ -9,7 +9,7 @@
 
 Next.js 是一个极简的框架，用于服务端渲染 React 应用程序
 
-**访问 [learnnextjs.com](https://learnnextjs.com) 来开始 Next.js。**
+**访问 [next 教程](https://tuzhu008.github.io/learnnextjs-content/) 来开始 Next.js。**
 
 ---
 
