@@ -1,0 +1,812 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>dva · React.js 及周边</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="tuzhu008">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="docs/GettingStarted.html" />
+    
+    
+    <link rel="prev" href="../Next.js/" />
+    
+
+    
+        <link rel="shortcut icon" href='../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    关于本书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../GLOSSARY.html">
+            
+                <a href="../../GLOSSARY.html">
+            
+                    
+                    术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../_Questions/faq.html">
+            
+                <a href="../../_Questions/faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考文档</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../Create-React-App/">
+            
+                <a href="../../Create-React-App/">
+            
+                    
+                    Create React App
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../Create-React-App/guide.html">
+            
+                <a href="../../Create-React-App/guide.html">
+            
+                    
+                    指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">核心库</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    redux
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    react-redux
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <a target="_blank" href="https://tuzhu008.github.io/gitbook-react-router_cn/">
+            
+                    
+                    react-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                    react-router-redux
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../prop-types/">
+            
+                <a href="../prop-types/">
+            
+                    
+                    prop-types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+
+    
+        
+        <li class="header">常用库</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    isomorphic-fetch
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <span>
+            
+                    
+                    fetch
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <span>
+            
+                    
+                    react-autosuggest
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">组件库</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../components/react-helmet/">
+            
+                <a href="../components/react-helmet/">
+            
+                    
+                    react-helmet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">CSS In JS</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../styled-jsx/">
+            
+                <a href="../styled-jsx/">
+            
+                    
+                    styled-jsx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../radium/">
+            
+                <a href="../radium/">
+            
+                    
+                    radium
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="../radium/docs/">
+            
+                <a href="../radium/docs/">
+            
+                    
+                    文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1.1" data-path="../radium/docs/guides/">
+            
+                <a href="../radium/docs/guides/">
+            
+                    
+                    指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.1.2" data-path="../radium/docs/api/">
+            
+                <a href="../radium/docs/api/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.1.3" data-path="../radium/docs/faq/">
+            
+                <a href="../radium/docs/faq/">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../react-css-modules/">
+            
+                <a href="../react-css-modules/">
+            
+                    
+                    react-css-modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他库</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" >
+            
+                <span>
+            
+                    
+                    recharts
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" >
+            
+                <a target="_blank" href="https://tuzhu008.github.io/gitbook-awesome_libraries_cn/Library/text-mask/">
+            
+                    
+                    text-mark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../Next.js/">
+            
+                <a href="../Next.js/">
+            
+                    
+                    Next.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="8.4" data-path="README_zh-CN.html">
+            
+                <a href="README_zh-CN.html">
+            
+                    
+                    dva
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.4.1" data-path="docs/GettingStarted.html">
+            
+                <a href="docs/GettingStarted.html">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4.2" data-path="docs/API_zh-CN.html">
+            
+                <a href="docs/API_zh-CN.html">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4.3" data-path="docs/Concepts_zh-CN.html">
+            
+                <a href="docs/Concepts_zh-CN.html">
+            
+                    
+                    Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >dva</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#dva"><b>1. </b>dva</a></li><ul><li><span class="title-icon "></span><a href="#&#x7279;&#x6027;"><b>1.1. </b>&#x7279;&#x6027;</a></li><li><span class="title-icon "></span><a href="#&#x4E3A;&#x4EC0;&#x4E48;&#x7528;-dva-"><b>1.2. </b>&#x4E3A;&#x4EC0;&#x4E48;&#x7528; dva ?</a></li><li><span class="title-icon "></span><a href="#demos"><b>1.3. </b>Demos</a></li><li><span class="title-icon "></span><a href="#&#x5FEB;&#x901F;&#x4E0A;&#x624B;"><b>1.4. </b>&#x5FEB;&#x901F;&#x4E0A;&#x624B;</a></li><li><span class="title-icon "></span><a href="#faq"><b>1.5. </b>FAQ</a></li><ul><li><span class="title-icon "></span><a href="#&#x547D;&#x540D;&#x7531;&#x6765;&#xFF1F;"><b>1.5.1. </b>&#x547D;&#x540D;&#x7531;&#x6765;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x662F;&#x5426;&#x53EF;&#x7528;&#x4E8E;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#xFF1F;"><b>1.5.2. </b>&#x662F;&#x5426;&#x53EF;&#x7528;&#x4E8E;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x662F;&#x5426;&#x652F;&#x6301;-ie8-&#xFF1F;"><b>1.5.3. </b>&#x662F;&#x5426;&#x652F;&#x6301; IE8 &#xFF1F;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E0B;&#x4E00;&#x6B65;"><b>1.6. </b>&#x4E0B;&#x4E00;&#x6B65;</a></li><li><span class="title-icon "></span><a href="#license"><b>1.7. </b>License</a></li></ul></ul></div><a href="#dva" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="dva"><a name="dva" class="anchor-navigation-ex-anchor" href="#dva"><i class="fa fa-link" aria-hidden="true"></i></a>1. dva</h1>
+<p><a href="https://npmjs.org/package/dva" target="_blank"><img src="https://img.shields.io/npm/v/dva.svg?style=flat" alt="NPM version"></a>
+<a href="https://travis-ci.org/dvajs/dva" target="_blank"><img src="https://img.shields.io/travis/dvajs/dva.svg?style=flat" alt="Build Status"></a>
+<a href="https://coveralls.io/r/dvajs/dva" target="_blank"><img src="https://img.shields.io/coveralls/dvajs/dva.svg?style=flat" alt="Coverage Status"></a>
+<a href="https://npmjs.org/package/dva" target="_blank"><img src="http://img.shields.io/npm/dm/dva.svg?style=flat" alt="NPM downloads"></a>
+<a href="https://david-dm.org/dvajs/dva" target="_blank"><img src="https://david-dm.org/dvajs/dva/status.svg" alt="Dependencies"></a>
+<a href="https://gitter.im/dvajs/Lobby?utm_source=share-link&amp;utm_medium=link&amp;utm_campaign=share-link" target="_blank"><img src="https://img.shields.io/gitter/room/dvajs/Lobby.svg?style=flat" alt="Join the chat at https://gitter.im/dvajs/Lobby"></a></p>
+<p><a href="README.md">View README in English</a></p>
+<p>&#x57FA;&#x4E8E; <a href="https://github.com/reactjs/redux" target="_blank">redux</a>&#x3001;<a href="https://github.com/redux-saga/redux-saga" target="_blank">redux-saga</a> &#x548C; <a href="https://github.com/ReactTraining/react-router" target="_blank">react-router</a> &#x7684;&#x8F7B;&#x91CF;&#x7EA7;&#x524D;&#x7AEF;&#x6846;&#x67B6;&#x3002;(&#x53D7; <a href="http://elm-lang.org/" target="_blank">elm</a> &#x548C; <a href="https://github.com/yoshuawuyts/choo" target="_blank">choo</a> &#x7684;&#x542F;&#x53D1;)</p>
+<hr>
+<h2 id="&#x7279;&#x6027;"><a name="&#x7279;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x7279;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x7279;&#x6027;</h2>
+<ul>
+<li><strong>&#x6613;&#x5B66;&#x6613;&#x7528;</strong>&#xFF1A;&#x4EC5;&#x6709; 6 &#x4E2A; api&#xFF0C;&#x5BF9; redux &#x7528;&#x6237;&#x5C24;&#x5176;&#x53CB;&#x597D;</li>
+<li><strong>elm &#x6982;&#x5FF5;</strong>&#xFF1A;&#x901A;&#x8FC7; <code>reducers</code>, <code>effects</code> &#x548C; <code>subscriptions</code> &#x6765;&#x7EC4;&#x7EC7; model</li>
+<li><strong>&#x652F;&#x6301; mobile &#x548C; react-native</strong>&#xFF1A;&#x8DE8;&#x5E73;&#x53F0; (<a href="https://github.com/sorrycc/dva-example-react-native" target="_blank">react-native &#x4F8B;&#x5B50;</a>)</li>
+<li><strong>&#x652F;&#x6301; HMR</strong>&#xFF1A;&#x76EE;&#x524D;&#x57FA;&#x4E8E; <a href="https://github.com/dvajs/babel-plugin-dva-hmr" target="_blank">babel-plugin-dva-hmr</a> &#x652F;&#x6301; components&#x3001;routes &#x548C; models &#x7684; HMR</li>
+<li><strong>&#x52A8;&#x6001;&#x52A0;&#x8F7D; Model &#x548C;&#x8DEF;&#x7531;</strong>&#xFF1A;&#x6309;&#x9700;&#x52A0;&#x8F7D;&#x52A0;&#x5FEB;&#x8BBF;&#x95EE;&#x901F;&#x5EA6; (<a href="https://github.com/dvajs/dva/blob/master/packages/dva-example-user-dashboard/src/router.js" target="_blank">&#x4F8B;&#x5B50;</a>)</li>
+<li><strong>&#x63D2;&#x4EF6;&#x673A;&#x5236;</strong>&#xFF1A;&#x6BD4;&#x5982; <a href="https://github.com/dvajs/dva/tree/master/packages/dva-loading" target="_blank">dva-loading</a> &#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x5904;&#x7406; loading &#x72B6;&#x6001;&#xFF0C;&#x4E0D;&#x7528;&#x4E00;&#x904D;&#x904D;&#x5730;&#x5199; showLoading &#x548C; hideLoading</li>
+<li><strong>&#x5B8C;&#x5584;&#x7684;&#x8BED;&#x6CD5;&#x5206;&#x6790;&#x5E93; <a href="https://github.com/dvajs/dva-ast" target="_blank">dva-ast</a></strong>&#xFF1A;<a href="https://github.com/dvajs/dva-cli" target="_blank">dva-cli</a> &#x57FA;&#x4E8E;&#x6B64;&#x5B9E;&#x73B0;&#x4E86;&#x667A;&#x80FD;&#x521B;&#x5EFA; model, router &#x7B49;</li>
+<li><strong>&#x652F;&#x6301; TypeScript</strong>&#xFF1A;&#x901A;&#x8FC7; d.ts (<a href="https://github.com/sorrycc/dva-boilerplate-typescript" target="_blank">&#x4F8B;&#x5B50;</a>)</li>
+</ul>
+<h2 id="&#x4E3A;&#x4EC0;&#x4E48;&#x7528;-dva-"><a name="&#x4E3A;&#x4EC0;&#x4E48;&#x7528;-dva-" class="anchor-navigation-ex-anchor" href="#&#x4E3A;&#x4EC0;&#x4E48;&#x7528;-dva-"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x4E3A;&#x4EC0;&#x4E48;&#x7528; dva ?</h2>
+<ul>
+<li><a href="https://github.com/dvajs/dva/issues/1" target="_blank">Why dva and what&apos;s dva</a></li>
+<li><a href="https://www.github.com/sorrycc/blog/issues/6" target="_blank">&#x652F;&#x4ED8;&#x5B9D;&#x524D;&#x7AEF;&#x5E94;&#x7528;&#x67B6;&#x6784;&#x7684;&#x53D1;&#x5C55;&#x548C;&#x9009;&#x62E9;</a></li>
+</ul>
+<h2 id="demos"><a name="demos" class="anchor-navigation-ex-anchor" href="#demos"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Demos</h2>
+<ul>
+<li><a href="https://stackblitz.com/edit/dva-example-count" target="_blank">Count</a>: &#x7B80;&#x5355;&#x8BA1;&#x6570;&#x5668;</li>
+<li><a href="https://github.com/dvajs/dva/tree/master/packages/dva-example-user-dashboard" target="_blank">User Dashboard</a>: &#x7528;&#x6237;&#x7BA1;&#x7406;</li>
+<li><a href="https://github.com/dvajs/dva-hackernews" target="_blank">HackerNews</a>:  (<a href="https://dvajs.github.io/dva-hackernews/" target="_blank">Demo</a>)&#xFF0C;HackerNews Clone</li>
+<li><a href="https://github.com/zuiidea/antd-admin" target="_blank">antd-admin</a>: (<a href="http://antd-admin.zuiidea.com/" target="_blank">Demo</a>)&#xFF0C;&#x57FA;&#x4E8E; antd &#x548C; dva &#x7684;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x5E94;&#x7528;</li>
+<li><a href="https://github.com/sorrycc/github-stars" target="_blank">github-stars</a>: (<a href="http://sorrycc.github.io/github-stars/#/?_k=rmj86f" target="_blank">Demo</a>)&#xFF0C;Github Star &#x7BA1;&#x7406;&#x5E94;&#x7528;</li>
+<li><a href="https://github.com/nihgwu/react-native-dva-starter" target="_blank">react-native-dva-starter</a>: &#x96C6;&#x6210;&#x4E86; dva &#x548C; react-navigation &#x5178;&#x578B;&#x5E94;&#x7528;&#x573A;&#x666F;&#x7684; React Native &#x5B9E;&#x4F8B;</li>
+<li><a href="https://github.com/dvajs/dva/tree/master/packages/dva-example-nextjs" target="_blank">dva-example-nextjs</a>: &#x548C; next.js &#x6574;&#x5408;&#x4F7F;&#x7528;</li>
+<li><a href="https://github.com/yvanwangl/AccountSystem.git" target="_blank">Account System</a>: &#x5C0F;&#x578B;&#x5E93;&#x5B58;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;</li>
+</ul>
+<h2 id="&#x5FEB;&#x901F;&#x4E0A;&#x624B;"><a name="&#x5FEB;&#x901F;&#x4E0A;&#x624B;" class="anchor-navigation-ex-anchor" href="#&#x5FEB;&#x901F;&#x4E0A;&#x624B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x5FEB;&#x901F;&#x4E0A;&#x624B;</h2>
+<p><a href="https://github.com/sorrycc/blog/issues/18" target="_blank">12 &#x6B65; 30 &#x5206;&#x949F;&#xFF0C;&#x5B8C;&#x6210;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x7684; CRUD &#x5E94;&#x7528; (react+dva+antd)</a></p>
+<h2 id="faq"><a name="faq" class="anchor-navigation-ex-anchor" href="#faq"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. FAQ</h2>
+<h3 id="&#x547D;&#x540D;&#x7531;&#x6765;&#xFF1F;"><a name="&#x547D;&#x540D;&#x7531;&#x6765;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x547D;&#x540D;&#x7531;&#x6765;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1. &#x547D;&#x540D;&#x7531;&#x6765;&#xFF1F;</h3>
+<blockquote>
+<p>D.Va&#x62E5;&#x6709;&#x4E00;&#x90E8;&#x5F3A;&#x5927;&#x7684;&#x673A;&#x7532;&#xFF0C;&#x5B83;&#x5177;&#x6709;&#x4E24;&#x53F0;&#x5168;&#x81EA;&#x52A8;&#x7684;&#x8FD1;&#x8DDD;&#x79BB;&#x805A;&#x53D8;&#x673A;&#x70AE;&#x3001;&#x53EF;&#x4EE5;&#x4F7F;&#x673A;&#x7532;&#x98DE;&#x8DC3;&#x654C;&#x4EBA;&#x6216;&#x969C;&#x788D;&#x7269;&#x7684;&#x63A8;&#x8FDB;&#x5668;&#x3001; &#x8FD8;&#x6709;&#x53EF;&#x4EE5;&#x62B5;&#x5FA1;&#x6765;&#x81EA;&#x6B63;&#x9762;&#x7684;&#x8FDC;&#x7A0B;&#x653B;&#x51FB;&#x7684;&#x9632;&#x5FA1;&#x77E9;&#x9635;&#x3002;</p>
+</blockquote>
+<p>&#x2014;&#x2014; &#x6765;&#x81EA; <a href="http://ow.blizzard.cn/heroes/dva" target="_blank">&#x5B88;&#x671B;&#x5148;&#x950B;</a> &#x3002;</p>
+<p><img src="https://zos.alipayobjects.com/rmsportal/psagSCVHOKQVqqNjjMdf.jpg" width="200" height="200"></p>
+<h3 id="&#x662F;&#x5426;&#x53EF;&#x7528;&#x4E8E;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#xFF1F;"><a name="&#x662F;&#x5426;&#x53EF;&#x7528;&#x4E8E;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x662F;&#x5426;&#x53EF;&#x7528;&#x4E8E;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.2. &#x662F;&#x5426;&#x53EF;&#x7528;&#x4E8E;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#xFF1F;</h3>
+<p>&#x5F53;&#x7136;&#xFF01;&#x516C;&#x53F8;&#x5185;&#x7528;&#x4E8E;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x7684;&#x9879;&#x76EE;&#x4F30;&#x8BA1;&#x5DF2;&#x7ECF;&#x6709; 200+ &#x3002;</p>
+<h3 id="&#x662F;&#x5426;&#x652F;&#x6301;-ie8-&#xFF1F;"><a name="&#x662F;&#x5426;&#x652F;&#x6301;-ie8-&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x662F;&#x5426;&#x652F;&#x6301;-ie8-&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.3. &#x662F;&#x5426;&#x652F;&#x6301; IE8 &#xFF1F;</h3>
+<p>&#x4E0D;&#x652F;&#x6301;&#x3002;</p>
+<h2 id="&#x4E0B;&#x4E00;&#x6B65;"><a name="&#x4E0B;&#x4E00;&#x6B65;" class="anchor-navigation-ex-anchor" href="#&#x4E0B;&#x4E00;&#x6B65;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x4E0B;&#x4E00;&#x6B65;</h2>
+<p>&#x4EE5;&#x4E0B;&#x80FD;&#x5E2E;&#x4F60;&#x66F4;&#x597D;&#x5730;&#x7406;&#x89E3;&#x548C;&#x4F7F;&#x7528; dva &#xFF1A;</p>
+<ul>
+<li>&#x7406;&#x89E3; dva &#x7684; <a href="https://github.com/dvajs/dva/blob/master/docs/Concepts_zh-CN.md" target="_blank">8 &#x4E2A;&#x6982;&#x5FF5;</a> &#xFF0C;&#x4EE5;&#x53CA;&#x4ED6;&#x4EEC;&#x662F;&#x5982;&#x4F55;&#x4E32;&#x8D77;&#x6765;&#x7684;</li>
+<li>&#x638C;&#x63E1; dva &#x7684;<a href="https://github.com/dvajs/dva/blob/master/docs/API_zh-CN.md" target="_blank">&#x6240;&#x6709; API</a></li>
+<li>&#x67E5;&#x770B; <a href="https://github.com/dvajs/dva-knowledgemap" target="_blank">dva &#x77E5;&#x8BC6;&#x5730;&#x56FE;</a> &#xFF0C;&#x5305;&#x542B; ES6, React, dva &#x7B49;&#x6240;&#x6709;&#x57FA;&#x7840;&#x77E5;&#x8BC6;</li>
+<li>&#x67E5;&#x770B; <a href="https://github.com/dvajs/dva/issues?q=is%3Aissue+is%3Aclosed+label%3Afaq" target="_blank">&#x66F4;&#x591A; FAQ</a>&#xFF0C;&#x770B;&#x770B;&#x522B;&#x4EBA;&#x901A;&#x5E38;&#x4F1A;&#x9047;&#x5230;&#x4EC0;&#x4E48;&#x95EE;&#x9898;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x57FA;&#x4E8E; dva-cli &#x521B;&#x5EFA;&#x9879;&#x76EE;&#xFF0C;&#x6700;&#x597D;&#x4E86;&#x89E3;&#x4ED6;&#x7684; <a href="https://github.com/sorrycc/roadhog#&#x914D;&#x7F6E;" target="_blank">&#x914D;&#x7F6E;&#x65B9;&#x5F0F;</a></li>
+</ul>
+<p>&#x8FD8;&#x8981;&#x4E86;&#x89E3;&#x66F4;&#x591A;?</p>
+<ul>
+<li>&#x770B;&#x770B; dva &#x7684;&#x524D;&#x8EAB; <a href="https://github.com/sorrycc/blog/issues/1" target="_blank">React + Redux &#x6700;&#x4F73;&#x5B9E;&#x8DF5;</a>&#xFF0C;&#x77E5;&#x9053; dva &#x662F;&#x600E;&#x4E48;&#x6765;&#x7684;</li>
+<li>&#x5728; gitc &#x5206;&#x4EAB; dva &#x7684; PPT &#xFF1A;<a href="http://slides.com/sorrycc/dva" target="_blank">React &#x5E94;&#x7528;&#x6846;&#x67B6;&#x5728;&#x8682;&#x8681;&#x91D1;&#x670D;&#x7684;&#x5B9E;&#x8DF5;</a></li>
+<li>&#x5982;&#x679C;&#x8FD8;&#x5728;&#x7528; dva@1.x&#xFF0C;&#x8BF7;&#x5C3D;&#x5FEB; <a href="https://github.com/sorrycc/blog/issues/48" target="_blank">&#x5347;&#x7EA7;&#x5230; 2.x</a></li>
+</ul>
+<h2 id="license"><a name="license" class="anchor-navigation-ex-anchor" href="#license"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. License</h2>
+<p><a href="https://tldrlegal.com/license/mit-license" target="_blank">MIT</a></p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; tuzhu008 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-01-16 14:17:12
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Next.js/" class="navigation navigation-prev " aria-label="Previous page: Next.js">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="docs/GettingStarted.html" class="navigation navigation-next " aria-label="Next page: 入门">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"dva","level":"8.4","depth":1,"next":{"title":"入门","level":"8.4.1","depth":2,"path":"Library/dva/docs/GettingStarted.md","ref":"Library/dva/docs/GettingStarted.md","articles":[]},"previous":{"title":"Next.js","level":"8.3","depth":1,"path":"Library/Next.js/README.md","ref":"Library/Next.js/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchors","anchor-navigation-ex","favicon","copy-code-button","alerts","splitter","book-summary-scroll-position-saver","include-codeblock","ace","prism","prism-themes","-highlight","tbfed-pagefooter","github","sectionx","livereload"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tuzhu008 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"ace":{},"github":{"url":"https://github.com/tuzhu008"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"night","family":"serif","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"prism-themes":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"acefull","theme":"tomorrow","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"tuzhu008","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js 及周边","language":"zh-hans","gitbook":"*","description":"React.js 自我学习"},"file":{"path":"Library/dva/README_zh-CN.md","mtime":"2018-01-16T06:17:12.737Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-15T12:06:47.285Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

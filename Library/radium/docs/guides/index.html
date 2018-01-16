@@ -86,10 +86,10 @@
     <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../faq/" />
+    <link rel="next" href="../api/" />
     
     
-    <link rel="prev" href="../api/" />
+    <link rel="prev" href="../" />
     
 
     
@@ -406,20 +406,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.2.1.1" data-path="../api/">
-            
-                <a href="../api/">
-            
-                    
-                    API
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="7.2.1.2" data-path="./">
+        <li class="chapter active" data-level="7.2.1.1" data-path="./">
             
                 <a href="./">
             
@@ -432,12 +419,25 @@
             
         </li>
     
+        <li class="chapter " data-level="7.2.1.2" data-path="../api/">
+            
+                <a href="../api/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
         <li class="chapter " data-level="7.2.1.3" data-path="../faq/">
             
                 <a href="../faq/">
             
                     
-                    API
+                    常见问题
             
                 </a>
             
@@ -514,6 +514,64 @@
             
         </li>
     
+        <li class="chapter " data-level="8.4" data-path="../../../dva/README_zh-CN.html">
+            
+                <a href="../../../dva/README_zh-CN.html">
+            
+                    
+                    dva
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.4.1" data-path="../../../dva/docs/GettingStarted.html">
+            
+                <a href="../../../dva/docs/GettingStarted.html">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4.2" data-path="../../../dva/docs/API_zh-CN.html">
+            
+                <a href="../../../dva/docs/API_zh-CN.html">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4.3" data-path="../../../dva/docs/Concepts_zh-CN.html">
+            
+                <a href="../../../dva/docs/Concepts_zh-CN.html">
+            
+                    
+                    Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
 
@@ -559,266 +617,279 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#using-radium"><b>1. </b>Using Radium</a></li><ul><li><span class="title-icon "></span><a href="#how-do-i-do-it-then"><b>1.1. </b>How do I do it, then?</a></li><li><span class="title-icon "></span><a href="#modifiers"><b>1.2. </b>Modifiers</a></li><li><span class="title-icon "></span><a href="#browser-states"><b>1.3. </b>Browser States</a></li><li><span class="title-icon "></span><a href="#media-queries"><b>1.4. </b>Media queries</a></li><ul><li><span class="title-icon "></span><a href="#nested-browser-states"><b>1.4.1. </b>Nested browser states</a></li><li><span class="title-icon "></span><a href="#known-issues-with-media-queries"><b>1.4.2. </b>Known issues with media queries</a></li></ul><li><span class="title-icon "></span><a href="#styling-multiple-elements-in-a-single-component"><b>1.5. </b>Styling multiple elements in a single component</a></li><li><span class="title-icon "></span><a href="#styling-one-element-depending-on-anothers-state"><b>1.6. </b>Styling one element depending on another&apos;s state</a></li><li><span class="title-icon "></span><a href="#fallback-values"><b>1.7. </b>Fallback values</a></li><li><span class="title-icon "></span><a href="#style-component"><b>1.8. </b><style> component</a></li></ul></ul></div><a href='#using-radium' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a><h1 id="using-radium"><a name="using-radium" class="anchor-navigation-ex-anchor" href="#using-radium"><i class="fa fa-link" aria-hidden="true"></i></a>1. Using Radium</h1>
-<p><strong>Table of Contents</strong></p>
+                                <h2 id="&#x4F7F;&#x7528;-radium"><a name="&#x4F7F;&#x7528;-radium" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;-radium"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4F7F;&#x7528;-radium" class="plugin-anchor" href="#&#x4F7F;&#x7528;-radium"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528; Radium</h2>
+<p><strong>&#x5185;&#x5BB9;&#x5217;&#x8868;</strong></p>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
 <ul>
-<li><a href="#how-do-i-do-it-then">How do I do it, then?</a></li>
-<li><a href="#modifiers">Modifiers</a></li>
-<li><a href="#browser-states">Browser States</a></li>
-<li><a href="#media-queries">Media Queries</a><ul>
-<li><a href="#nested-browser-states">Nested browser states</a></li>
-<li><a href="#known-issues-with-media-queries">Known issues with media queries</a></li>
+<li><a href="#&#x8BE5;&#x600E;&#x4E48;&#x505A;&#x5462;">&#x8BE5;&#x600E;&#x4E48;&#x505A;&#x5462;?</a></li>
+<li><a href="#&#x4FEE;&#x9970;&#x7B26;">&#x4FEE;&#x9970;&#x7B26;</a></li>
+<li><a href="#&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;">&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;</a></li>
+<li><a href="#&#x5A92;&#x4F53;&#x67E5;&#x8BE2;">&#x5A92;&#x4F53;&#x67E5;&#x8BE2;</a><ul>
+<li><a href="#&#x5D4C;&#x5957;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;">&#x5D4C;&#x5957;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;</a></li>
+<li><a href="#&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x7684;&#x5DF2;&#x77E5;&#x95EE;&#x9898;">&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x7684;&#x5DF2;&#x77E5;&#x95EE;&#x9898;</a><ul>
+<li><a href="#ie9-&#x652F;&#x6301;">IE9 &#x652F;&#x6301;</a></li>
 </ul>
 </li>
-<li><a href="#styling-multiple-elements-in-a-single-component">Styling Multiple Elements in a Single Component</a></li>
-<li><a href="#styling-one-element-depending-on-anothers-state">Styling one element depending on another&apos;s state</a></li>
-<li><a href="#fallback-values">Fallback Values</a></li>
-<li><a href="#style-component">Style Component</a></li>
 </ul>
-<p>Radium is a toolset for easily writing React component styles. It resolves browser states and media queries to apply the correct styles to your components, all without selectors, specificity, or source order dependence.</p>
-<h2 id="how-do-i-do-it-then"><a name="how-do-i-do-it-then" class="anchor-navigation-ex-anchor" href="#how-do-i-do-it-then"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. How do I do it, then?</h2>
-<p>First, require or import Radium at the top of component file:</p>
-<pre><code class="lang-jsx">var Radium = require(&apos;radium&apos;);
+</li>
+<li><a href="#&#x5728;&#x5355;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E2D;&#x5BF9;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;">&#x5728;&#x5355;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E2D;&#x5BF9;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;</a></li>
+<li><a href="#&#x6839;&#x636E;&#x53E6;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x72B6;&#x6001;&#x5BF9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;">&#x6839;&#x636E;&#x53E6;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x72B6;&#x6001;&#x5BF9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;</a></li>
+<li><a href="#&#x56DE;&#x9000;&#x503C;">&#x56DE;&#x9000;&#x503C;</a></li>
+<li><a href="#style-&#x7EC4;&#x4EF6;"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Style</span><span class="token punctuation">&gt;</span></span></code> &#x7EC4;&#x4EF6;</a></li>
+</ul>
+<!-- /TOC -->
+<p>Radium &#x662F;&#x4E00;&#x4E2A;&#x5DE5;&#x5177;&#x96C6;&#xFF0C;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5730;&#x7F16;&#x5199; React &#x7EC4;&#x4EF6;&#x6837;&#x5F0F;&#x3002;
+&#x5B83;&#x5C06;&#x89E3;&#x6790;&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;&#x548C;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#xFF0C;&#x5C06;&#x6B63;&#x786E;&#x7684;&#x6837;&#x5F0F;&#x5E94;&#x7528;&#x5230;&#x60A8;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x9009;&#x62E9;&#x5668;&#x3001;&#x7279;&#x5F02;&#x6027;&#x6216;&#x6E90;&#x987A;&#x5E8F;&#x4F9D;&#x8D56;&#x3002;</p>
+<h2 id="&#x8BE5;&#x600E;&#x4E48;&#x505A;&#x5462;"><a name="&#x8BE5;&#x600E;&#x4E48;&#x505A;&#x5462;" class="anchor-navigation-ex-anchor" href="#&#x8BE5;&#x600E;&#x4E48;&#x505A;&#x5462;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8BE5;&#x600E;&#x4E48;&#x505A;&#x5462;" class="plugin-anchor" href="#&#x8BE5;&#x600E;&#x4E48;&#x505A;&#x5462;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BE5;&#x600E;&#x4E48;&#x505A;&#x5462;?</h2>
+<p>&#x9996;&#x5148;&#xFF0C;&#x5728;&#x7EC4;&#x4EF6;&#x6587;&#x4EF6;&#x7684;&#x9876;&#x90E8; require &#x6216; import Radium&#xFF1A;</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> Radium <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;radium&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-// or
-import Radium from &apos;radium&apos;
+<span class="token comment" spellcheck="true">// &#x6216;</span>
+<span class="token keyword">import</span> Radium <span class="token keyword">from</span> <span class="token string">&apos;radium&apos;</span>
 
-// If you want to use the &lt;Style /&gt; component you can do
-import Radium, { Style } from &apos;radium&apos;
+<span class="token comment" spellcheck="true">// &#x5982;&#x679C;&#x4F60;&#x60F3;&#x4F7F;&#x7528; &lt;Style /&gt; &#x7EC4;&#x4EF6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x505A;</span>
+<span class="token keyword">import</span> Radium<span class="token punctuation">,</span> <span class="token punctuation">{</span> Style <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;radium&apos;</span>
 </code></pre>
-<p>Let&apos;s create a fictional <code>&lt;Button&gt;</code> component. It will have a set of default styles, will adjust its appearance based on modifiers, and will include hover, focus, and active states.</p>
-<pre><code class="lang-jsx">class Button extends React.Component {
-  render() {
-    return (
-      &lt;button&gt;
-        {this.props.children}
-      &lt;/button&gt;
-    );
-  }
-}
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x865A;&#x6784;&#x7684; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Button</span><span class="token punctuation">&gt;</span></span></code> &#x7EC4;&#x4EF6;&#x3002;&#x5B83;&#x5C06;&#x6709;&#x4E00;&#x7EC4;&#x9ED8;&#x8BA4;&#x6837;&#x5F0F;&#xFF0C;&#x5C06;&#x6839;&#x636E;&#x4FEE;&#x9970;&#x7B26;&#x8C03;&#x6574;&#x5176;&#x5916;&#x89C2;&#xFF0C;&#x5E76;&#x5C06;&#x5305;&#x62EC; hover&#x3001;focus &#x548C; active &#x72B6;&#x6001;&#x3002;</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">class</span> <span class="token class-name">Button</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">&gt;</span></span>
+        <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>children<span class="token punctuation">}</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
-<p>Radium is activated by wrapping your component:</p>
-<pre><code class="lang-jsx">class Button extends React.Component {
-  // ...
-}
-module.exports = Radium(Button);
+<p>Radium &#x662F;&#x901A;&#x8FC7;&#x5305;&#x88C5;&#x4F60;&#x7684;&#x7EC4;&#x4EF6;&#x6765;&#x6FC0;&#x6D3B;&#x7684;:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">class</span> <span class="token class-name">Button</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// ...</span>
+<span class="token punctuation">}</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">Radium</span><span class="token punctuation">(</span>Button<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-// or
-class Button extends React.Component {
-  // ...
-}
-Button = Radium(Button);
+<span class="token comment" spellcheck="true">// &#x6216;</span>
+<span class="token keyword">class</span> <span class="token class-name">Button</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// ...</span>
+<span class="token punctuation">}</span>
+Button <span class="token operator">=</span> <span class="token function">Radium</span><span class="token punctuation">(</span>Button<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p>Radium resolves nested style objects into a flat object that can be applied directly to a React element. If you&apos;re not familiar with handling inline styles in React, see the React guide to the subject <a href="https://reactjs.org/docs/dom-elements.html#style">here</a>. A basic style object looks like this:</p>
-<pre><code class="lang-jsx">var baseStyles = {
-  background: &apos;blue&apos;,
-  border: 0,
-  borderRadius: 4,
-  color: &apos;white&apos;,
-  padding: &apos;1.5em&apos;
-};
+<p>Radium &#x53EF;&#x4EE5;&#x628A;&#x5D4C;&#x5957;&#x7684;&#x6837;&#x5F0F;&#x5BF9;&#x8C61;&#x89E3;&#x6790;&#x6210;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5E94;&#x7528;&#x5230;&#x4E00;&#x4E2A; React &#x5143;&#x7D20;&#x7684;&#x5E73;&#x9762;&#x5BF9;&#x8C61;&#x3002;
+&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x719F;&#x6089;&#x5904;&#x7406; React &#x4E2D;&#x7684;&#x5185;&#x8054;&#x6837;&#x5F0F;&#xFF0C;&#x770B;&#x5230; <a href="https://reactjs.org/docs/dom-elements.html#style" target="_blank">React &#x6307;&#x5357;</a>&#x3002;
+&#x4E00;&#x4E2A;&#x57FA;&#x672C;&#x7684;&#x6837;&#x5F0F;&#x5BF9;&#x8C61;&#x662F;&#x8FD9;&#x6837;&#x7684;:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> baseStyles <span class="token operator">=</span> <span class="token punctuation">{</span>
+  background<span class="token punctuation">:</span> <span class="token string">&apos;blue&apos;</span><span class="token punctuation">,</span>
+  border<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  borderRadius<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+  color<span class="token punctuation">:</span> <span class="token string">&apos;white&apos;</span><span class="token punctuation">,</span>
+  padding<span class="token punctuation">:</span> <span class="token string">&apos;1.5em&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<p>We usually nest styles inside a shared <code>styles</code> object for easy access:</p>
-<pre><code class="lang-jsx">var styles = {
-  base: {
-    background: &apos;blue&apos;,
-    border: 0,
-    borderRadius: 4,
-    color: &apos;white&apos;,
-    padding: &apos;1.5em&apos;
-  }
-};
+<p>&#x6211;&#x4EEC;&#x901A;&#x5E38;&#x5728;&#x5171;&#x4EAB;&#x7684; <code>styles</code> &#x5BF9;&#x8C61;&#x4E2D;&#x5D4C;&#x5957;&#x6837;&#x5F0F;&#x4EE5;&#x65B9;&#x4FBF;&#x8BBF;&#x95EE;:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> styles <span class="token operator">=</span> <span class="token punctuation">{</span>
+  base<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    background<span class="token punctuation">:</span> <span class="token string">&apos;blue&apos;</span><span class="token punctuation">,</span>
+    border<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    borderRadius<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    color<span class="token punctuation">:</span> <span class="token string">&apos;white&apos;</span><span class="token punctuation">,</span>
+    padding<span class="token punctuation">:</span> <span class="token string">&apos;1.5em&apos;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<p>Next, simply pass your styles to the <code>style</code> attribute of an element:</p>
-<pre><code class="lang-jsx">// Inside render
-return (
-  &lt;button style={styles.base}&gt;
-    {this.props.children}
-  &lt;/button&gt;
-);
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x7B80;&#x5355;&#x5730;&#x5C06;&#x6837;&#x5F0F;&#x4F20;&#x9012;&#x7ED9;&#x5143;&#x7D20;&#x7684; <code>style</code> &#x5C5E;&#x6027;:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token comment" spellcheck="true">// Inside render</span>
+<span class="token keyword">return</span> <span class="token punctuation">(</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>base<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>children<span class="token punctuation">}</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p>From there, React will apply our styles to the <code>button</code> element. This is not very exciting. In fact, React does this by default, without the extra step of using Radium. Radium becomes useful when you need to do more complex things, like handling modifiers, states, and media queries. But, even without those complex things, Radium will still merge an array of styles and automatically apply vendor prefixes for you.</p>
-<h2 id="modifiers"><a name="modifiers" class="anchor-navigation-ex-anchor" href="#modifiers"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Modifiers</h2>
-<p>Radium provides one shorthand for dealing with styles that are modified by your props or state. You can pass an array of style objects to the <code>style</code> attribute, and they will be merged together intelligently (<code>:hover</code> states, for instance, will merge instead of overwrite). This works the same way as it does in <a href="https://facebook.github.io/react-native/docs/style.html#using-styles">React Native</a>.</p>
-<pre><code class="lang-jsx">&lt;Button
-  size=&quot;large&quot;
-  block={true}&gt;
-  Cool Button!
-&lt;/Button&gt;
+<p>&#x4ECE;&#x90A3;&#x91CC;&#xFF0C;React &#x5C06;&#x628A;&#x6211;&#x4EEC;&#x7684;&#x6837;&#x5F0F;&#x5E94;&#x7528;&#x5230; <code>button</code> &#x5143;&#x7D20;&#x3002;&#x8FD9;&#x4E0D;&#x662F;&#x5F88;&#x4EE4;&#x4EBA;&#x5174;&#x594B;&#x3002;
+&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x5728;&#x6CA1;&#x6709;&#x4F7F;&#x7528; Radium &#x7684;&#x989D;&#x5916;&#x6B65;&#x9AA4;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E9B;&#x662F;&#x7531; React &#x9ED8;&#x8BA4;&#x5904;&#x7406;&#x7684;&#x3002;
+&#x5F53;&#x60A8;&#x9700;&#x8981;&#x505A;&#x66F4;&#x590D;&#x6742;&#x7684;&#x4E8B;&#x60C5;&#x65F6;&#xFF0C;Radium &#x53D8;&#x5F97;&#x6709;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#x5904;&#x7406;&#x4FEE;&#x9970;&#x7B26;&#x3001;&#x72B6;&#x6001;&#x548C;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x3002;
+&#x4F46;&#x662F;&#xFF0C;&#x5373;&#x4F7F;&#x6CA1;&#x6709;&#x8FD9;&#x4E9B;&#x590D;&#x6742;&#x7684;&#x4E1C;&#x897F;&#xFF0C;Radium &#x4ECD;&#x7136;&#x4F1A;&#x5408;&#x5E76;&#x4E00;&#x4E2A;&#x6837;&#x5F0F;&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x81EA;&#x52A8;&#x4E3A;&#x60A8;&#x5E94;&#x7528;&#x4F9B;&#x5E94;&#x5546;&#x524D;&#x7F00;&#x3002;</p>
+<h2 id="&#x4FEE;&#x9970;&#x7B26;"><a name="&#x4FEE;&#x9970;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x9970;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4FEE;&#x9970;&#x7B26;" class="plugin-anchor" href="#&#x4FEE;&#x9970;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4FEE;&#x9970;&#x7B26;</h2>
+<p>Radium &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5904;&#x7406;&#x7531;&#x4F60;&#x7684; props &#x6216;&#x72B6;&#x6001;&#x4FEE;&#x6539;&#x7684;&#x6837;&#x5F0F;&#x3002;
+&#x60A8;&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;&#x6837;&#x5F0F;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#x4F20;&#x9012;&#x7ED9; <code>style</code> &#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x4EEC;&#x5C06;&#x88AB;&#x667A;&#x80FD;&#x5730;&#x5408;&#x5E76;&#x5728;&#x4E00;&#x8D77;(&#x4F8B;&#x5982;&#xFF0C;<code>:hover</code> &#x72B6;&#x6001;&#x5C06;&#x5408;&#x5E76;&#x800C;&#x4E0D;&#x662F;&#x8986;&#x76D6;)&#x3002;
+&#x8FD9;&#x4E0E;&#x5B83;&#x5728; <a href="https://facebook.github.io/react-native/docs/style.html#using-styles" target="_blank">React Native</a> &#x4E2D;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x76F8;&#x540C;&#x3002;</p>
+<pre class="language-"><code class="lang-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Button</span>
+  <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>large<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">block</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+  Cool Button<span class="token operator">!</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Button</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<p>Start by adding another style to your <code>styles</code> object:</p>
-<pre><code class="lang-jsx">var styles = {
-  base: {
-    background: &apos;blue&apos;,
-    border: 0,
-    borderRadius: 4,
-    color: &apos;white&apos;,
-    padding: &apos;1.5em&apos;
-  },
+<p>&#x9996;&#x5148;&#x5411;&#x60A8;&#x7684; <code>styles</code> &#x5BF9;&#x8C61;&#x6DFB;&#x52A0;&#x53E6;&#x4E00;&#x4E2A;&#x6837;&#x5F0F;:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> styles <span class="token operator">=</span> <span class="token punctuation">{</span>
+  base<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    background<span class="token punctuation">:</span> <span class="token string">&apos;blue&apos;</span><span class="token punctuation">,</span>
+    border<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    borderRadius<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    color<span class="token punctuation">:</span> <span class="token string">&apos;white&apos;</span><span class="token punctuation">,</span>
+    padding<span class="token punctuation">:</span> <span class="token string">&apos;1.5em&apos;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
 
-  block: {
-    display: &apos;block&apos;
-  }
-};
+  block<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    display<span class="token punctuation">:</span> <span class="token string">&apos;block&apos;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<p>Then, include that style object in the array passed to the <code>style</code> attribute if the conditions match:</p>
-<pre><code class="lang-jsx">// Inside render
-return (
-  &lt;button
-    style={[
-      styles.base,
-      this.props.block &amp;&amp; styles.block
-    ]}&gt;
-    {this.props.children}
-  &lt;/button&gt;
-);
+<p>&#x7136;&#x540E;&#xFF0C;&#x5728;&#x6761;&#x4EF6;&#x5339;&#x914D;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5C06;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6837;&#x5F0F;&#x5BF9;&#x8C61;&#x5305;&#x542B;&#x5230; <code>style</code> &#x5C5E;&#x6027;&#x4E2D;&#x3002;</p>
+<pre class="language-"><code class="lang-jsx"><span class="token comment" spellcheck="true">// Inside render</span>
+<span class="token keyword">return</span> <span class="token punctuation">(</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
+    <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>
+      styles<span class="token punctuation">.</span>base<span class="token punctuation">,</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>block <span class="token operator">&amp;&amp;</span> styles<span class="token punctuation">.</span>block
+    <span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>children<span class="token punctuation">}</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p>Radium will ignore any elements of the array that aren&apos;t objects, such as the result of <code>this.props.block &amp;&amp; styles.block</code> when <code>this.props.block</code> is <code>false</code> or <code>undefined</code>.</p>
-<h2 id="browser-states"><a name="browser-states" class="anchor-navigation-ex-anchor" href="#browser-states"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Browser States</h2>
-<p>Radium supports styling for three browser states that are targeted with pseudo-selectors in normal CSS: <code>:hover</code>, <code>:focus</code>, and <code>:active</code>.</p>
-<p>To add styles for these states, add a special key to your style object with the additional rules. Additionally, you will need to add a unique <code>key</code> prop to the elements that take these styles:</p>
-<pre><code class="lang-jsx">var styles = {
-  base: {
-    background: &apos;blue&apos;,
-    border: 0,
-    borderRadius: 4,
-    color: &apos;white&apos;,
-    padding: &apos;1.5em&apos;,
+<p>Radium &#x4F1A;&#x5FFD;&#x7565;&#x4EFB;&#x4F55;&#x4E0D;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#xFF0C;&#x6BD4;&#x5982;&#x5F53;<code>this.props.block</code> &#x4E3A;  <code>false</code> &#x6216; <code>undefined</code> &#x65F6;&#xFF0C; <code>this.props.block &amp;&amp; styles.block</code> &#x7684;&#x503C; &#x3002;</p>
+<h2 id="&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;"><a name="&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;" class="anchor-navigation-ex-anchor" href="#&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;" class="plugin-anchor" href="#&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;</h2>
+<p>Radium &#x652F;&#x6301;&#x4E09;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;&#xFF0C;&#x8FD9;&#x4E9B;&#x72B6;&#x6001;&#x4F7F;&#x7528;&#x6B63;&#x5E38;&#x7684; CSS &#x4E2D;&#x662F;&#x4F2A;&#x9009;&#x62E9;&#x5668;&#x5B9A;&#x4F4D;&#x7684;: <code>:hover</code>&#x3001;<code>:focus</code> &#x548C; <code>:active</code>&#x3002;
+Radium supports styling for three browser states that are targeted with pseudo-selectors in normal CSS: <code>:hover</code>, <code>:focus</code>, and <code>:active</code>.</p>
+<p>&#x8981;&#x4E3A;&#x8FD9;&#x4E09;&#x4E2A;&#x72B6;&#x6001;&#x6DFB;&#x52A0;&#x6837;&#x5F0F;&#xFF0C;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x952E;&#x5230;&#x60A8;&#x7684;&#x6837;&#x5F0F;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x6DFB;&#x52A0;&#x989D;&#x5916;&#x7684;&#x89C4;&#x5219;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x60A8;&#x8FD8;&#x9700;&#x8981;&#x4E3A;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x6837;&#x5F0F;&#x7684;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x60DF;&#x4E00; <code>key</code> &#x5C5E;&#x6027;:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> styles <span class="token operator">=</span> <span class="token punctuation">{</span>
+  base<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    background<span class="token punctuation">:</span> <span class="token string">&apos;blue&apos;</span><span class="token punctuation">,</span>
+    border<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    borderRadius<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    color<span class="token punctuation">:</span> <span class="token string">&apos;white&apos;</span><span class="token punctuation">,</span>
+    padding<span class="token punctuation">:</span> <span class="token string">&apos;1.5em&apos;</span><span class="token punctuation">,</span>
 
-    &apos;:hover&apos;: {
-      backgroundColor: &apos;red&apos;
-    },
+    <span class="token string">&apos;:hover&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      backgroundColor<span class="token punctuation">:</span> <span class="token string">&apos;red&apos;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
 
-    &apos;:focus&apos;: {
-      backgroundColor: &apos;green&apos;
-    },
+    <span class="token string">&apos;:focus&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      backgroundColor<span class="token punctuation">:</span> <span class="token string">&apos;green&apos;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
 
-    &apos;:active&apos;: {
-      backgroundColor: &apos;yellow&apos;
-    },
-  },
+    <span class="token string">&apos;:active&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      backgroundColor<span class="token punctuation">:</span> <span class="token string">&apos;yellow&apos;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
 
-  block: {
-    display: &apos;block&apos;,
+  block<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    display<span class="token punctuation">:</span> <span class="token string">&apos;block&apos;</span><span class="token punctuation">,</span>
 
-    &apos;:hover&apos;: {
-      boxShadow: &apos;0 3px 0 rgba(0,0,0,0.2)&apos;
-    }
-  },
-};
+    <span class="token string">&apos;:hover&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      boxShadow<span class="token punctuation">:</span> <span class="token string">&apos;0 3px 0 rgba(0,0,0,0.2)&apos;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-class MyComponent extends Component {
-...
-render() {
-  return (
-    &lt;div key=&quot;1&quot; style={styles.base}&gt;
-      &lt;div key=&quot;2&quot; style={styles.block} /&gt;
-    &lt;/div&gt;
-  );
-}
-...
-}
+<span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+<span class="token operator">...</span>
+<span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>base<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span>styles<span class="token punctuation">.</span>block<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">...</span>
+<span class="token punctuation">}</span>
 
-export default Radium(MyComponent);
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">Radium</span><span class="token punctuation">(</span>MyComponent<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p>Radium will merge styles for any active states when your component is rendered. If you are having trouble with browser states, check out <a href="https://github.com/FormidableLabs/radium/tree/master/docs/faq#why-does-the-browser-state-of-a-child-element-not-reset-after-unmounting-and-remounting">this section</a> of the FAQ.</p>
-<h2 id="media-queries"><a name="media-queries" class="anchor-navigation-ex-anchor" href="#media-queries"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Media queries</h2>
-<p>Add media queries to your style objects the same way as you would add browser state modifiers like  <code>:hover</code>. The key must start with <code>@media</code>, and the <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries">syntax</a> is identical to CSS:</p>
-<pre><code class="lang-jsx">var style = {
-  width: &apos;25%&apos;,
+<p>&#x5F53;&#x7EC4;&#x4EF6;&#x88AB;&#x6E32;&#x67D3;&#x65F6;&#xFF0C;Radium &#x5C06;&#x5408;&#x5E76;&#x4EFB;&#x4F55;&#x6FC0;&#x6D3B;&#x7684;&#x72B6;&#x6001;&#x7684;&#x6837;&#x5F0F;&#x3002;&#x5982;&#x679C;&#x4F60;&#x9047;&#x5230;&#x5173;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;&#x7684;&#x9EBB;&#x70E6;&#xFF0C;&#x8BF7;&#x67E5;&#x770B;&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x7684;<a href="https://github.com/FormidableLabs/radium/tree/master/docs/faq#why-does-the-browser-state-of-a-child-element-not-reset-after-unmounting-and-remounting" target="_blank">&#x8FD9;&#x4E2A;&#x90E8;&#x5206;</a>&#x3002;</p>
+<h2 id="&#x5A92;&#x4F53;&#x67E5;&#x8BE2;"><a name="&#x5A92;&#x4F53;&#x67E5;&#x8BE2;" class="anchor-navigation-ex-anchor" href="#&#x5A92;&#x4F53;&#x67E5;&#x8BE2;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5A92;&#x4F53;&#x67E5;&#x8BE2;" class="plugin-anchor" href="#&#x5A92;&#x4F53;&#x67E5;&#x8BE2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5A92;&#x4F53;&#x67E5;&#x8BE2;</h2>
+<p>&#x5C06;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x6DFB;&#x52A0;&#x5230;&#x60A8;&#x7684;&#x6837;&#x5F0F;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x5C31;&#x50CF;&#x6DFB;&#x52A0;&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;&#x4FEE;&#x6539;&#x5668;&#x4E00;&#x6837;&#xFF0C;&#x5982; <code>:hover</code>&#x3002;&#x7684;&#x5173;&#x952E;&#x5FC5;&#x987B;&#x4EE5; <code>@media</code> &#x5F00;&#x5934;&#xFF0C;<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries" target="_blank">&#x8BED;&#x6CD5;</a>&#x548C; CSS &#x76F8;&#x540C;&#xFF1A;</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> style <span class="token operator">=</span> <span class="token punctuation">{</span>
+  width<span class="token punctuation">:</span> <span class="token string">&apos;25%&apos;</span><span class="token punctuation">,</span>
 
-  &apos;@media (min-width: 320px)&apos;: {
-    width: &apos;100%&apos;
-  }
-};
+  <span class="token string">&apos;@media (min-width: 320px)&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    width<span class="token punctuation">:</span> <span class="token string">&apos;100%&apos;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<p>Radium will apply the correct styles for the currently active media queries. Top level CSS rules in your media queries will be converted to CSS and rendered in an actual <code>&lt;style&gt;</code> element with <code>!important</code> appended instead of being applied inline so they will work with server-side rendering. Note that you must wrap your top-level component in the <code>&lt;StyleRoot&gt;</code> component to render the Radium stylesheet. Print styles will also work as normal, since they are rendered to CSS.</p>
-<h3 id="nested-browser-states"><a name="nested-browser-states" class="anchor-navigation-ex-anchor" href="#nested-browser-states"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. Nested browser states</h3>
-<p>Media query styles can also contain nested browser states:</p>
-<pre><code class="lang-jsx">var style = {
-  width: &apos;25%&apos;,
+<p>Radium &#x5C06;&#x4E3A;&#x5F53;&#x524D;&#x6FC0;&#x6D3B;&#x7684;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x5E94;&#x7528;&#x6B63;&#x786E;&#x7684;&#x6837;&#x5F0F;&#x3002;&#x5728;&#x60A8;&#x7684;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x4E2D;&#xFF0C;&#x9876;&#x7EA7; CSS &#x89C4;&#x5219;&#x5C06;&#x88AB;&#x8F6C;&#x6362;&#x4E3A; CSS&#xFF0C;&#x5E76;&#x4EE5;&#x5B9E;&#x9645;&#x7684; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span></code> &#x5143;&#x7D20;&#x7684;&#x5F62;&#x5F0F;&#x6DFB;&#x52A0; <code>!important</code>&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5E94;&#x7528;&#x4E8E;&#x5185;&#x8054;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x8FDB;&#x884C;&#x6E32;&#x67D3;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x60A8;&#x5FC5;&#x987B;&#x5C06;&#x9876;&#x7EA7;&#x7EC4;&#x4EF6;&#x5305;&#x88C5;&#x5728; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>StyleRoot</span><span class="token punctuation">&gt;</span></span></code> &#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;&#x4EE5;&#x6E32;&#x67D3; Radium &#x6837;&#x5F0F;&#x8868;&#x3002;&#x6253;&#x5370;&#x6837;&#x5F0F;&#x4E5F;&#x4F1A;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x4F1A;&#x88AB;&#x6E32;&#x67D3;&#x4E3A; CSS&#x3002;</p>
+<h3 id="&#x5D4C;&#x5957;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;"><a name="&#x5D4C;&#x5957;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;" class="anchor-navigation-ex-anchor" href="#&#x5D4C;&#x5957;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5D4C;&#x5957;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;" class="plugin-anchor" href="#&#x5D4C;&#x5957;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5D4C;&#x5957;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;</h3>
+<p>&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x6837;&#x5F0F;&#x4E5F;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x5D4C;&#x5957;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> style <span class="token operator">=</span> <span class="token punctuation">{</span>
+  width<span class="token punctuation">:</span> <span class="token string">&apos;25%&apos;</span><span class="token punctuation">,</span>
 
-  &apos;@media (min-width: 320px)&apos;: {
-    width: &apos;100%&apos;,
+  <span class="token string">&apos;@media (min-width: 320px)&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    width<span class="token punctuation">:</span> <span class="token string">&apos;100%&apos;</span><span class="token punctuation">,</span>
 
-    &apos;:hover&apos;: {
-      background: &apos;white&apos;
-    }
-  }
-};
+    <span class="token string">&apos;:hover&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      background<span class="token punctuation">:</span> <span class="token string">&apos;white&apos;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<h3 id="known-issues-with-media-queries"><a name="known-issues-with-media-queries" class="anchor-navigation-ex-anchor" href="#known-issues-with-media-queries"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. Known issues with media queries</h3>
-<h4 id="ie9-support"><a name="ie9-support" class="anchor-navigation-ex-anchor" href="#ie9-support"><i class="fa fa-link" aria-hidden="true"></i></a><a name="ie9-support" class="plugin-anchor" href="#ie9-support"><i class="fa fa-link" aria-hidden="true"></i></a>IE9 Support</h4>
-<p>IE9 supports CSS media queries, but doesn&apos;t support the <code>matchMedia</code> API. You&apos;ll need a <a href="https://github.com/paulirish/matchMedia.js/">polyfill that includes addListener</a>.</p>
-<h2 id="styling-multiple-elements-in-a-single-component"><a name="styling-multiple-elements-in-a-single-component" class="anchor-navigation-ex-anchor" href="#styling-multiple-elements-in-a-single-component"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. Styling multiple elements in a single component</h2>
-<p>Radium allows you to style multiple elements in the same component. You just have to give each element that has browser state modifiers like :hover or media queries a unique <code>key</code> or <code>ref</code> attribute:</p>
-<pre><code class="lang-jsx">// Inside render
-return (
-  &lt;div&gt;
-    &lt;div key=&quot;one&quot; style={[styles.both, styles.one]} /&gt;
-    &lt;div key=&quot;two&quot; style={[styles.both, styles.two]} /&gt;
-  &lt;/div&gt;
-);
+<h3 id="&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x7684;&#x5DF2;&#x77E5;&#x95EE;&#x9898;"><a name="&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x7684;&#x5DF2;&#x77E5;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x7684;&#x5DF2;&#x77E5;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x7684;&#x5DF2;&#x77E5;&#x95EE;&#x9898;" class="plugin-anchor" href="#&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x7684;&#x5DF2;&#x77E5;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x7684;&#x5DF2;&#x77E5;&#x95EE;&#x9898;</h3>
+<h4 id="ie9-&#x652F;&#x6301;"><a name="ie9-&#x652F;&#x6301;" class="anchor-navigation-ex-anchor" href="#ie9-&#x652F;&#x6301;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="ie9-&#x652F;&#x6301;" class="plugin-anchor" href="#ie9-&#x652F;&#x6301;"><i class="fa fa-link" aria-hidden="true"></i></a>IE9 &#x652F;&#x6301;</h4>
+<p>IE9 &#x652F;&#x6301; CSS &#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#xFF0C;&#x4F46;&#x4E0D;&#x652F;&#x6301; <code>matchMedia</code> API&#x3002;&#x4F60;&#x9700;&#x8981;&#x4E00;&#x4E2A; <a href="https://github.com/paulirish/matchMedia.js/" target="_blank">polyfill that includes addListener</a>&#x3002;</p>
+<h2 id="&#x5728;&#x5355;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E2D;&#x5BF9;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;"><a name="&#x5728;&#x5355;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E2D;&#x5BF9;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x5728;&#x5355;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E2D;&#x5BF9;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5728;&#x5355;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E2D;&#x5BF9;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;" class="plugin-anchor" href="#&#x5728;&#x5355;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E2D;&#x5BF9;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5728;&#x5355;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E2D;&#x5BF9;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;</h2>
+<p>Radium &#x5141;&#x8BB8;&#x4F60;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E2D;&#x6837;&#x5F0F;&#x5316;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x3002;&#x60A8;&#x53EA;&#x9700;&#x7ED9;&#x6BCF;&#x4E2A;&#x5177;&#x6709;&#x6D4F;&#x89C8;&#x5668;&#x72B6;&#x6001;&#x4FEE;&#x9970;&#x7B26;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x4F8B;&#x5982; :hover &#x6216;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x4E00;&#x4E2A;&#x60DF;&#x4E00;&#x7684; <code>key</code> &#x6216; <code>ref</code> &#x5C5E;&#x6027;:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token comment" spellcheck="true">// Inside render</span>
+<span class="token keyword">return</span> <span class="token punctuation">(</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>one<span class="token punctuation">&quot;</span></span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>styles<span class="token punctuation">.</span>both<span class="token punctuation">,</span> styles<span class="token punctuation">.</span>one<span class="token punctuation">]</span><span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>two<span class="token punctuation">&quot;</span></span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>styles<span class="token punctuation">.</span>both<span class="token punctuation">,</span> styles<span class="token punctuation">.</span>two<span class="token punctuation">]</span><span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-var styles = {
-  both: {
-    background: &apos;black&apos;,
-    border: &apos;solid 1px white&apos;,
-    height: 100,
-    width: 100
-  },
-  one: {
-    &apos;:hover&apos;: {
-      background: &apos;blue&apos;,
-    }
-  },
-  two: {
-    &apos;:hover&apos;: {
-      background: &apos;red&apos;,
-    }
-  }
-};
+<span class="token keyword">var</span> styles <span class="token operator">=</span> <span class="token punctuation">{</span>
+  both<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    background<span class="token punctuation">:</span> <span class="token string">&apos;black&apos;</span><span class="token punctuation">,</span>
+    border<span class="token punctuation">:</span> <span class="token string">&apos;solid 1px white&apos;</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+    width<span class="token punctuation">:</span> <span class="token number">100</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  one<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&apos;:hover&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      background<span class="token punctuation">:</span> <span class="token string">&apos;blue&apos;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  two<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&apos;:hover&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      background<span class="token punctuation">:</span> <span class="token string">&apos;red&apos;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<h2 id="styling-one-element-depending-on-anothers-state"><a name="styling-one-element-depending-on-anothers-state" class="anchor-navigation-ex-anchor" href="#styling-one-element-depending-on-anothers-state"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. Styling one element depending on another&apos;s state</h2>
-<p>You can query Radium&apos;s state using <code>Radium.getState</code>. This allows you to style or render one element based on the state of another, e.g. showing a message when a button is hovered.</p>
-<pre><code class="lang-jsx">// Inside render
-return (
-  &lt;div&gt;
-    &lt;button key=&quot;keyForButton&quot; style={[styles.button]}&gt;Hover me!&lt;/button&gt;
-    {Radium.getState(this.state, &apos;keyForButton&apos;, &apos;:hover&apos;) ? (
-      &lt;span&gt;{&apos; &apos;}Hovering!&lt;/span&gt;
-    ) : null}
-  &lt;/div&gt;
-);
+<h2 id="&#x6839;&#x636E;&#x53E6;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x72B6;&#x6001;&#x5BF9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;"><a name="&#x6839;&#x636E;&#x53E6;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x72B6;&#x6001;&#x5BF9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x6839;&#x636E;&#x53E6;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x72B6;&#x6001;&#x5BF9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6839;&#x636E;&#x53E6;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x72B6;&#x6001;&#x5BF9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;" class="plugin-anchor" href="#&#x6839;&#x636E;&#x53E6;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x72B6;&#x6001;&#x5BF9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6839;&#x636E;&#x53E6;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x72B6;&#x6001;&#x5BF9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6837;&#x5F0F;&#x5316;</h2>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>Radium.getState</code> &#x67E5;&#x8BE2; Radium &#x7684;&#x72B6;&#x6001;&#x3002;&#x8FD9;&#x5141;&#x8BB8;&#x60A8;&#x6839;&#x636E;&#x53E6;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x72B6;&#x6001;&#x6765;&#x6837;&#x5F0F;&#x5316;&#x6216;&#x6E32;&#x67D3;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x4F8B;&#x5982;&#x5728;&#x4E00;&#x4E2A;&#x6309;&#x94AE;&#x88AB;&#x60AC;&#x505C;&#x65F6;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#x3002;</p>
+<pre class="language-"><code class="lang-jsx"><span class="token comment" spellcheck="true">// Inside render</span>
+<span class="token keyword">return</span> <span class="token punctuation">(</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>keyForButton<span class="token punctuation">&quot;</span></span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>styles<span class="token punctuation">.</span>button<span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span>Hover me<span class="token operator">!</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">{</span>Radium<span class="token punctuation">.</span><span class="token function">getState</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">,</span> <span class="token string">&apos;keyForButton&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;:hover&apos;</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span><span class="token string">&apos; &apos;</span><span class="token punctuation">}</span>Hovering<span class="token operator">!</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">}</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-var styles = {
-  button: {
-    // Even though we don&apos;t have any special styles on the button, we need
-    // to add empty :hover styles here to tell Radium to track this element&apos;s
-    // state.
-    &apos;:hover&apos;: {}
-  }
-};
+<span class="token keyword">var</span> styles <span class="token operator">=</span> <span class="token punctuation">{</span>
+  button<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// &#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x5728;&#x6309;&#x94AE;&#x4E0A;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x7279;&#x6B8A;&#x7684;&#x6837;&#x5F0F;&#xFF0C;</span>
+    <span class="token comment" spellcheck="true">// &#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x8FD9;&#x91CC;&#x6DFB;&#x52A0;&#x7A7A;&#x7684; :hover &#x6837;&#x5F0F; &#x6765;&#x544A;&#x8BC9; Radium &#x8DDF;&#x8E2A;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x72B6;&#x6001;</span>
+    <span class="token string">&apos;:hover&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<h2 id="fallback-values"><a name="fallback-values" class="anchor-navigation-ex-anchor" href="#fallback-values"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. Fallback values</h2>
-<p>Sometimes you need to provide an additional value for a single CSS property in case the first one isn&apos;t applied successfully. Simply pass an array of values, and Radium will test them and apply the first one that works:</p>
-<pre><code class="lang-jsx">var styles = {
-  button: {
-    background: [&apos;rgba(255, 255, 255, .5)&apos;, &apos;#fff&apos;]
-  }
-};
+<h2 id="&#x56DE;&#x9000;&#x503C;"><a name="&#x56DE;&#x9000;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x56DE;&#x9000;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x56DE;&#x9000;&#x503C;" class="plugin-anchor" href="#&#x56DE;&#x9000;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DE;&#x9000;&#x503C;</h2>
+<p>&#x6709;&#x65F6;&#xFF0C;&#x60A8;&#x9700;&#x8981;&#x4E3A;&#x5355;&#x4E2A; CSS &#x5C5E;&#x6027;&#x63D0;&#x4F9B;&#x989D;&#x5916;&#x7684;&#x503C;&#xFF0C;&#x4EE5;&#x9632;&#x7B2C;&#x4E00;&#x4E2A; CSS &#x5C5E;&#x6027;&#x4E0D;&#x80FD;&#x6210;&#x529F;&#x5E94;&#x7528;&#x3002;&#x7B80;&#x5355;&#x5730;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x503C;&#x6570;&#x7EC4;&#xFF0C;Radium &#x5C06;&#x5BF9;&#x5B83;&#x4EEC;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#xFF0C;&#x5E76;&#x5E94;&#x7528;&#x7B2C;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;&#x503C;:</p>
+<pre class="language-"><code class="lang-jsx"><span class="token keyword">var</span> styles <span class="token operator">=</span> <span class="token punctuation">{</span>
+  button<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    background<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;rgba(255, 255, 255, .5)&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;#fff&apos;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<p>Is equivalent to the following CSS (note that the order is reversed):</p>
-<pre><code class="lang-css">.button {
-  background: #fff;
-  background: rgba(255, 255, 255, .5);
-}
+<p>&#x76F8;&#x5F53;&#x4E8E;&#x4E0B;&#x9762;&#x7684; CSS (&#x6CE8;&#x610F;&#x987A;&#x5E8F;&#x98A0;&#x5012;&#x4E86;):</p>
+<pre class="language-"><code class="lang-css"><span class="token selector">.button</span> <span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>255, 255, 255, .5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
-<h2 id="style-component"><a name="style-component" class="anchor-navigation-ex-anchor" href="#style-component"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. &lt;Style&gt; component</h2>
-<p>Want to add a style selector within your component? Need to pass properties to the <code>html</code> and <code>body</code> elements or group selectors (e.g. <code>h1, h2, h3</code>) that share properties? Radium has you covered with the <code>&lt;Style /&gt;</code> component - read how to use it <a href="https://github.com/FormidableLabs/radium/tree/master/docs/api#style-component">here</a>.</p>
+<h2 id="style-&#x7EC4;&#x4EF6;"><a name="style-&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#style-&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="style-&#x7EC4;&#x4EF6;" class="plugin-anchor" href="#style-&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Style</span><span class="token punctuation">&gt;</span></span></code> &#x7EC4;&#x4EF6;</h2>
+<p>&#x60F3;&#x5728;&#x60A8;&#x7684;&#x7EC4;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x6837;&#x5F0F;&#x9009;&#x62E9;&#x5668;&#x5417;?&#x9700;&#x8981;&#x5C06;&#x5C5E;&#x6027;&#x4F20;&#x9012;&#x7ED9; <code>html</code> &#x548C; <code>body</code> &#x5143;&#x7D20;&#x6216;&#x7EC4;&#x9009;&#x62E9;&#x5668;(&#x4F8B;&#x5982;: <code>h1, h2, h3</code>)&#x5171;&#x4EAB;&#x5C5E;&#x6027;? Radium &#x6709;&#x4F60;&#x8986;&#x76D6;&#x7684; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Style</span> <span class="token punctuation">/&gt;</span></span></code> &#x7EC4;&#x4EF6;&#x2014;&#x2014;&#x9605;&#x8BFB;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x5728;<a href="https://github.com/FormidableLabs/radium/tree/master/docs/api#style-component" target="_blank">&#x8FD9;&#x91CC;</a></p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; tuzhu008 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2018-01-12 23:12:31
-</span></footer></style></a></li></ul></ul></div>
+2018-01-16 09:09:21
+</span></footer>
                                 
                                 </section>
                             
@@ -845,12 +916,12 @@ var styles = {
 
             
                 
-                <a href="../api/" class="navigation navigation-prev " aria-label="Previous page: API">
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 文档">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../faq/" class="navigation navigation-next " aria-label="Next page: API">
+                <a href="../api/" class="navigation navigation-next " aria-label="Next page: API">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -861,7 +932,7 @@ var styles = {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"指南","level":"7.2.1.2","depth":3,"next":{"title":"API","level":"7.2.1.3","depth":3,"path":"Library/radium/docs/faq/README.md","ref":"Library/radium/docs/faq/README.md","articles":[]},"previous":{"title":"API","level":"7.2.1.1","depth":3,"path":"Library/radium/docs/api/README.md","ref":"Library/radium/docs/api/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchors","anchor-navigation-ex","favicon","copy-code-button","alerts","splitter","book-summary-scroll-position-saver","include-codeblock","ace","prism","prism-themes","-highlight","tbfed-pagefooter","github","sectionx","livereload"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tuzhu008 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"ace":{},"github":{"url":"https://github.com/tuzhu008"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"night","family":"serif","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"prism-themes":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"acefull","theme":"tomorrow","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"tuzhu008","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js 及周边","language":"zh-hans","gitbook":"*","description":"React.js 自我学习"},"file":{"path":"Library/radium/docs/guides/README.md","mtime":"2018-01-12T15:12:31.871Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-15T11:39:22.533Z"},"basePath":"../../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"指南","level":"7.2.1.1","depth":3,"next":{"title":"API","level":"7.2.1.2","depth":3,"path":"Library/radium/docs/api/README.md","ref":"Library/radium/docs/api/README.md","articles":[]},"previous":{"title":"文档","level":"7.2.1","depth":2,"path":"Library/radium/docs/README.md","ref":"Library/radium/docs/README.md","articles":[{"title":"指南","level":"7.2.1.1","depth":3,"path":"Library/radium/docs/guides/README.md","ref":"Library/radium/docs/guides/README.md","articles":[]},{"title":"API","level":"7.2.1.2","depth":3,"path":"Library/radium/docs/api/README.md","ref":"Library/radium/docs/api/README.md","articles":[]},{"title":"常见问题","level":"7.2.1.3","depth":3,"path":"Library/radium/docs/faq/README.md","ref":"Library/radium/docs/faq/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchors","anchor-navigation-ex","favicon","copy-code-button","alerts","splitter","book-summary-scroll-position-saver","include-codeblock","ace","prism","prism-themes","-highlight","tbfed-pagefooter","github","sectionx","livereload"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tuzhu008 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"ace":{},"github":{"url":"https://github.com/tuzhu008"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"night","family":"serif","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"prism-themes":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"acefull","theme":"tomorrow","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"tuzhu008","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js 及周边","language":"zh-hans","gitbook":"*","description":"React.js 自我学习"},"file":{"path":"Library/radium/docs/guides/README.md","mtime":"2018-01-16T01:09:21.695Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-15T12:06:47.285Z"},"basePath":"../../../..","book":{"language":""}});
         });
     </script>
 </div>

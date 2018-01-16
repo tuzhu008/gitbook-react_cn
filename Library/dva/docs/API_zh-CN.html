@@ -1,0 +1,975 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>API · React.js 及周边</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="tuzhu008">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Concepts_zh-CN.html" />
+    
+    
+    <link rel="prev" href="GettingStarted.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../../assets/images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../../assets/images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../../assets/images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    关于本书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../GLOSSARY.html">
+            
+                <a href="../../../GLOSSARY.html">
+            
+                    
+                    术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../_Questions/faq.html">
+            
+                <a href="../../../_Questions/faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考文档</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../../Create-React-App/">
+            
+                <a href="../../../Create-React-App/">
+            
+                    
+                    Create React App
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../../Create-React-App/guide.html">
+            
+                <a href="../../../Create-React-App/guide.html">
+            
+                    
+                    指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">核心库</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    redux
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    react-redux
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <a target="_blank" href="https://tuzhu008.github.io/gitbook-react-router_cn/">
+            
+                    
+                    react-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                    react-router-redux
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../prop-types/">
+            
+                <a href="../../prop-types/">
+            
+                    
+                    prop-types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+
+    
+        
+        <li class="header">常用库</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    isomorphic-fetch
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <span>
+            
+                    
+                    fetch
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <span>
+            
+                    
+                    react-autosuggest
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">组件库</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../components/react-helmet/">
+            
+                <a href="../../components/react-helmet/">
+            
+                    
+                    react-helmet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">CSS In JS</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../styled-jsx/">
+            
+                <a href="../../styled-jsx/">
+            
+                    
+                    styled-jsx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../radium/">
+            
+                <a href="../../radium/">
+            
+                    
+                    radium
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="../../radium/docs/">
+            
+                <a href="../../radium/docs/">
+            
+                    
+                    文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1.1" data-path="../../radium/docs/guides/">
+            
+                <a href="../../radium/docs/guides/">
+            
+                    
+                    指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.1.2" data-path="../../radium/docs/api/">
+            
+                <a href="../../radium/docs/api/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.1.3" data-path="../../radium/docs/faq/">
+            
+                <a href="../../radium/docs/faq/">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../../react-css-modules/">
+            
+                <a href="../../react-css-modules/">
+            
+                    
+                    react-css-modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他库</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" >
+            
+                <span>
+            
+                    
+                    recharts
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" >
+            
+                <a target="_blank" href="https://tuzhu008.github.io/gitbook-awesome_libraries_cn/Library/text-mask/">
+            
+                    
+                    text-mark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../../Next.js/">
+            
+                <a href="../../Next.js/">
+            
+                    
+                    Next.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="../README_zh-CN.html">
+            
+                <a href="../README_zh-CN.html">
+            
+                    
+                    dva
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.4.1" data-path="GettingStarted.html">
+            
+                <a href="GettingStarted.html">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="8.4.2" data-path="API_zh-CN.html">
+            
+                <a href="API_zh-CN.html">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4.3" data-path="Concepts_zh-CN.html">
+            
+                <a href="Concepts_zh-CN.html">
+            
+                    
+                    Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#api"><b>1. </b>API</a></li><ul><li><span class="title-icon "></span><a href="#&#x8F93;&#x51FA;&#x6587;&#x4EF6;"><b>1.1. </b>&#x8F93;&#x51FA;&#x6587;&#x4EF6;</a></li><ul><li><span class="title-icon "></span><a href="#dva"><b>1.1.1. </b>dva</a></li><li><span class="title-icon "></span><a href="#dvarouter"><b>1.1.2. </b>dva/router</a></li><li><span class="title-icon "></span><a href="#dvafetch"><b>1.1.3. </b>dva/fetch</a></li><li><span class="title-icon "></span><a href="#dvasaga"><b>1.1.4. </b>dva/saga</a></li><li><span class="title-icon "></span><a href="#dvadynamic"><b>1.1.5. </b>dva/dynamic</a></li></ul><li><span class="title-icon "></span><a href="#dva-api"><b>1.2. </b>dva API</a></li><ul><li><span class="title-icon "></span><a href="#app--dvaopts"><b>1.2.1. </b>app = dva(opts)</a></li><li><span class="title-icon "></span><a href="#appusehooks"><b>1.2.2. </b>app.use(hooks)</a></li><li><span class="title-icon "></span><a href="#appmodelmodel"><b>1.2.3. </b>app.model(model)</a></li><li><span class="title-icon "></span><a href="#appunmodelnamespace"><b>1.2.4. </b>app.unmodel(namespace)</a></li><li><span class="title-icon "></span><a href="#approuter-history-app---routerconfig"><b>1.2.5. </b>app.router(({ history, app }) =&gt; RouterConfig)</a></li><li><span class="title-icon "></span><a href="#appstartselector"><b>1.2.6. </b>app.start(selector?)</a></li></ul><li><span class="title-icon "></span><a href="#model"><b>1.3. </b>Model</a></li><ul><li><span class="title-icon "></span><a href="#namespace"><b>1.3.1. </b>namespace</a></li><li><span class="title-icon "></span><a href="#state"><b>1.3.2. </b>state</a></li><li><span class="title-icon "></span><a href="#reducers"><b>1.3.3. </b>reducers</a></li><li><span class="title-icon "></span><a href="#effects"><b>1.3.4. </b>effects</a></li><li><span class="title-icon "></span><a href="#subscriptions"><b>1.3.5. </b>subscriptions</a></li></ul></ul></ul></div><a href="#api" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="api"><a name="api" class="anchor-navigation-ex-anchor" href="#api"><i class="fa fa-link" aria-hidden="true"></i></a>1. API</h1>
+<p><a href="API.md">View this in English</a></p>
+<h2 id="&#x8F93;&#x51FA;&#x6587;&#x4EF6;"><a name="&#x8F93;&#x51FA;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x8F93;&#x51FA;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x8F93;&#x51FA;&#x6587;&#x4EF6;</h2>
+<h3 id="dva"><a name="dva" class="anchor-navigation-ex-anchor" href="#dva"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. dva</h3>
+<p>&#x9ED8;&#x8BA4;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x3002;</p>
+<h3 id="dvarouter"><a name="dvarouter" class="anchor-navigation-ex-anchor" href="#dvarouter"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. dva/router</h3>
+<p>&#x9ED8;&#x8BA4;&#x8F93;&#x51FA; <a href="https://github.com/ReactTraining/react-router" target="_blank">react-router</a> &#x63A5;&#x53E3;&#xFF0C; <a href="https://github.com/reactjs/react-router-redux" target="_blank">react-router-redux</a> &#x7684;&#x63A5;&#x53E3;&#x901A;&#x8FC7;&#x5C5E;&#x6027; routerRedux &#x8F93;&#x51FA;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Router<span class="token punctuation">,</span> Route<span class="token punctuation">,</span> routerRedux <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;dva/router&apos;</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="dvafetch"><a name="dvafetch" class="anchor-navigation-ex-anchor" href="#dvafetch"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. dva/fetch</h3>
+<p>&#x5F02;&#x6B65;&#x8BF7;&#x6C42;&#x5E93;&#xFF0C;&#x8F93;&#x51FA; <a href="https://github.com/matthew-andrews/isomorphic-fetch" target="_blank">isomorphic-fetch</a> &#x7684;&#x63A5;&#x53E3;&#x3002;&#x4E0D;&#x548C; dva &#x5F3A;&#x7ED1;&#x5B9A;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4EFB;&#x610F;&#x7684;&#x8BF7;&#x6C42;&#x5E93;&#x3002;</p>
+<h3 id="dvasaga"><a name="dvasaga" class="anchor-navigation-ex-anchor" href="#dvasaga"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. dva/saga</h3>
+<p>&#x8F93;&#x51FA; <a href="https://github.com/yelouafi/redux-saga" target="_blank">redux-saga</a> &#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x7528;&#x4F8B;&#x7684;&#x7F16;&#x5199;&#x3002;&#xFF08;&#x7528;&#x4F8B;&#x4E2D;&#x9700;&#x8981;&#x7528;&#x5230; effects&#xFF09;</p>
+<h3 id="dvadynamic"><a name="dvadynamic" class="anchor-navigation-ex-anchor" href="#dvadynamic"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.5. dva/dynamic</h3>
+<p>&#x89E3;&#x51B3;&#x7EC4;&#x4EF6;&#x52A8;&#x6001;&#x52A0;&#x8F7D;&#x95EE;&#x9898;&#x7684; util &#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> dynamic <span class="token keyword">from</span> <span class="token string">&apos;dva/dynamic&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> UserPageComponent <span class="token operator">=</span> <span class="token function">dynamic</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  app<span class="token punctuation">,</span>
+  models<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+    <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">&apos;./models/users&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  component<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">&apos;./routes/UserPage&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>opts</code> &#x5305;&#x542B;&#xFF1A;</p>
+<ul>
+<li>app: dva &#x5B9E;&#x4F8B;&#xFF0C;&#x52A0;&#x8F7D; models &#x65F6;&#x9700;&#x8981;</li>
+<li>models: &#x8FD4;&#x56DE; Promise &#x6570;&#x7EC4;&#x7684;&#x51FD;&#x6570;&#xFF0C;Promise &#x8FD4;&#x56DE; dva model</li>
+<li>component&#xFF1A;&#x8FD4;&#x56DE; Promise &#x7684;&#x51FD;&#x6570;&#xFF0C;Promise &#x8FD4;&#x56DE; React Component</li>
+</ul>
+<h2 id="dva-api"><a name="dva-api" class="anchor-navigation-ex-anchor" href="#dva-api"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. dva API</h2>
+<h3 id="app--dvaopts"><a name="app--dvaopts" class="anchor-navigation-ex-anchor" href="#app--dvaopts"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. app = dva(opts)</h3>
+<p>&#x521B;&#x5EFA;&#x5E94;&#x7528;&#xFF0C;&#x8FD4;&#x56DE; dva &#x5B9E;&#x4F8B;&#x3002;(&#x6CE8;&#xFF1A;dva &#x652F;&#x6301;&#x591A;&#x5B9E;&#x4F8B;)</p>
+<p><code>opts</code> &#x5305;&#x542B;&#xFF1A;</p>
+<ul>
+<li><code>history</code>&#xFF1A;&#x6307;&#x5B9A;&#x7ED9;&#x8DEF;&#x7531;&#x7528;&#x7684; history&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; <code>hashHistory</code></li>
+<li><code>initialState</code>&#xFF1A;&#x6307;&#x5B9A;&#x521D;&#x59CB;&#x6570;&#x636E;&#xFF0C;&#x4F18;&#x5148;&#x7EA7;&#x9AD8;&#x4E8E; model &#x4E2D;&#x7684; state&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; <code>{}</code></li>
+</ul>
+<p>&#x5982;&#x679C;&#x8981;&#x914D;&#x7F6E; history &#x4E3A; <code>browserHistory</code>&#xFF0C;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> createHistory <span class="token keyword">from</span> <span class="token string">&apos;history/createBrowserHistory&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">dva</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  history<span class="token punctuation">:</span> <span class="token function">createHistory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x51FA;&#x4E8E;&#x6613;&#x7528;&#x6027;&#x7684;&#x8003;&#x8651;&#xFF0C;<code>opts</code> &#x91CC;&#x4E5F;&#x53EF;&#x4EE5;&#x914D;&#x6240;&#x6709;&#x7684; <a href="#appusehooks">hooks</a> &#xFF0C;&#x4E0B;&#x9762;&#x5305;&#x542B;&#x5168;&#x90E8;&#x7684;&#x53EF;&#x914D;&#x5C5E;&#x6027;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">dva</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  history<span class="token punctuation">,</span>
+  initialState<span class="token punctuation">,</span>
+  onError<span class="token punctuation">,</span>
+  onAction<span class="token punctuation">,</span>
+  onStateChange<span class="token punctuation">,</span>
+  onReducer<span class="token punctuation">,</span>
+  onEffect<span class="token punctuation">,</span>
+  onHmr<span class="token punctuation">,</span>
+  extraReducers<span class="token punctuation">,</span>
+  extraEnhancers<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="appusehooks"><a name="appusehooks" class="anchor-navigation-ex-anchor" href="#appusehooks"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. app.use(hooks)</h3>
+<p>&#x914D;&#x7F6E; hooks &#x6216;&#x8005;&#x6CE8;&#x518C;&#x63D2;&#x4EF6;&#x3002;&#xFF08;&#x63D2;&#x4EF6;&#x6700;&#x7EC8;&#x8FD4;&#x56DE;&#x7684;&#x662F; hooks &#xFF09;</p>
+<p>&#x6BD4;&#x5982;&#x6CE8;&#x518C; <a href="https://github.com/dvajs/dva-loading" target="_blank">dva-loading</a> &#x63D2;&#x4EF6;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> createLoading <span class="token keyword">from</span> <span class="token string">&apos;dva-loading&apos;</span><span class="token punctuation">;</span>
+<span class="token operator">...</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">createLoading</span><span class="token punctuation">(</span>opts<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>hooks</code> &#x5305;&#x542B;&#xFF1A;</p>
+<h4 id="onerrorerr-dispatch--"><a name="onerrorerr-dispatch--" class="anchor-navigation-ex-anchor" href="#onerrorerr-dispatch--"><i class="fa fa-link" aria-hidden="true"></i></a><a name="onerrorerr-dispatch--" class="plugin-anchor" href="#onerrorerr-dispatch--"><i class="fa fa-link" aria-hidden="true"></i></a><code>onError((err, dispatch) =&gt; {})</code></h4>
+<p><code>effect</code> &#x6267;&#x884C;&#x9519;&#x8BEF;&#x6216; <code>subscription</code> &#x901A;&#x8FC7; <code>done</code> &#x4E3B;&#x52A8;&#x629B;&#x9519;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x7BA1;&#x7406;&#x5168;&#x5C40;&#x51FA;&#x9519;&#x72B6;&#x6001;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;<code>subscription</code> &#x5E76;&#x6CA1;&#x6709;&#x52A0; <code>try...catch</code>&#xFF0C;&#x6240;&#x4EE5;&#x6709;&#x9519;&#x8BEF;&#x65F6;&#x9700;&#x901A;&#x8FC7;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570; <code>done</code> &#x4E3B;&#x52A8;&#x629B;&#x9519;&#x3002;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js">app<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  subscriptions<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">{</span> dispatch <span class="token punctuation">}</span><span class="token punctuation">,</span> done<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">done</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7528; antd&#xFF0C;&#x90A3;&#x4E48;&#x6700;&#x7B80;&#x5355;&#x7684;&#x5168;&#x5C40;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x901A;&#x5E38;&#x4F1A;&#x8FD9;&#x4E48;&#x505A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> message <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;antd&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">dva</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function">onError</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>message<span class="token punctuation">,</span> <span class="token comment" spellcheck="true">/* duration */</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="onactionfn--fn"><a name="onactionfn--fn" class="anchor-navigation-ex-anchor" href="#onactionfn--fn"><i class="fa fa-link" aria-hidden="true"></i></a><a name="onactionfn--fn" class="plugin-anchor" href="#onactionfn--fn"><i class="fa fa-link" aria-hidden="true"></i></a><code>onAction(fn | fn[])</code></h4>
+<p>&#x5728; action &#x88AB; dispatch &#x65F6;&#x89E6;&#x53D1;&#xFF0C;&#x7528;&#x4E8E;&#x6CE8;&#x518C; redux &#x4E2D;&#x95F4;&#x4EF6;&#x3002;&#x652F;&#x6301;&#x51FD;&#x6570;&#x6216;&#x51FD;&#x6570;&#x6570;&#x7EC4;&#x683C;&#x5F0F;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x8981;&#x901A;&#x8FC7; <a href="https://github.com/evgenyrodionov/redux-logger" target="_blank">redux-logger</a> &#x6253;&#x5370;&#x65E5;&#x5FD7;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> createLogger <span class="token keyword">from</span> <span class="token string">&apos;redux-logger&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">dva</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  onAction<span class="token punctuation">:</span> <span class="token function">createLogger</span><span class="token punctuation">(</span>opts<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="onstatechangefn"><a name="onstatechangefn" class="anchor-navigation-ex-anchor" href="#onstatechangefn"><i class="fa fa-link" aria-hidden="true"></i></a><a name="onstatechangefn" class="plugin-anchor" href="#onstatechangefn"><i class="fa fa-link" aria-hidden="true"></i></a><code>onStateChange(fn)</code></h4>
+<p><code>state</code> &#x6539;&#x53D8;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x540C;&#x6B65; <code>state</code> &#x5230; localStorage&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7B49;&#x3002;</p>
+<h4 id="onreducerfn"><a name="onreducerfn" class="anchor-navigation-ex-anchor" href="#onreducerfn"><i class="fa fa-link" aria-hidden="true"></i></a><a name="onreducerfn" class="plugin-anchor" href="#onreducerfn"><i class="fa fa-link" aria-hidden="true"></i></a><code>onReducer(fn)</code></h4>
+<p>&#x5C01;&#x88C5; reducer &#x6267;&#x884C;&#x3002;&#x6BD4;&#x5982;&#x501F;&#x52A9; <a href="https://github.com/omnidan/redux-undo" target="_blank">redux-undo</a> &#x5B9E;&#x73B0; redo/undo &#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> undoable <span class="token keyword">from</span> <span class="token string">&apos;redux-undo&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">dva</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  onReducer<span class="token punctuation">:</span> reducer <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>state<span class="token punctuation">,</span> action<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> undoOpts <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token keyword">const</span> newState <span class="token operator">=</span> <span class="token function">undoable</span><span class="token punctuation">(</span>reducer<span class="token punctuation">,</span> undoOpts<span class="token punctuation">)</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> action<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment" spellcheck="true">// &#x7531;&#x4E8E; dva &#x540C;&#x6B65;&#x4E86; routing &#x6570;&#x636E;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x628A;&#x8FD9;&#x90E8;&#x5206;&#x8FD8;&#x539F;</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token operator">...</span>newState<span class="token punctuation">,</span> routing<span class="token punctuation">:</span> newState<span class="token punctuation">.</span>present<span class="token punctuation">.</span>routing <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x8BE6;&#x89C1; <a href="https://github.com/dvajs/dva/blob/master/examples/count-undo/index.js" target="_blank">examples/count-undo</a> &#x3002;</p>
+<h4 id="oneffectfn"><a name="oneffectfn" class="anchor-navigation-ex-anchor" href="#oneffectfn"><i class="fa fa-link" aria-hidden="true"></i></a><a name="oneffectfn" class="plugin-anchor" href="#oneffectfn"><i class="fa fa-link" aria-hidden="true"></i></a><code>onEffect(fn)</code></h4>
+<p>&#x5C01;&#x88C5; effect &#x6267;&#x884C;&#x3002;&#x6BD4;&#x5982; <a href="https://github.com/dvajs/dva-loading" target="_blank">dva-loading</a> &#x57FA;&#x4E8E;&#x6B64;&#x5B9E;&#x73B0;&#x4E86;&#x81EA;&#x52A8;&#x5904;&#x7406; loading &#x72B6;&#x6001;&#x3002;</p>
+<h4 id="onhmrfn"><a name="onhmrfn" class="anchor-navigation-ex-anchor" href="#onhmrfn"><i class="fa fa-link" aria-hidden="true"></i></a><a name="onhmrfn" class="plugin-anchor" href="#onhmrfn"><i class="fa fa-link" aria-hidden="true"></i></a><code>onHmr(fn)</code></h4>
+<p>&#x70ED;&#x66FF;&#x6362;&#x76F8;&#x5173;&#xFF0C;&#x76EE;&#x524D;&#x7528;&#x4E8E; <a href="https://github.com/dvajs/babel-plugin-dva-hmr" target="_blank">babel-plugin-dva-hmr</a> &#x3002;</p>
+<h4 id="extrareducers"><a name="extrareducers" class="anchor-navigation-ex-anchor" href="#extrareducers"><i class="fa fa-link" aria-hidden="true"></i></a><a name="extrareducers" class="plugin-anchor" href="#extrareducers"><i class="fa fa-link" aria-hidden="true"></i></a><code>extraReducers</code></h4>
+<p>&#x6307;&#x5B9A;&#x989D;&#x5916;&#x7684; reducer&#xFF0C;&#x6BD4;&#x5982; <a href="https://github.com/erikras/redux-form" target="_blank">redux-form</a> &#x9700;&#x8981;&#x6307;&#x5B9A;&#x989D;&#x5916;&#x7684; <code>form</code> reducer&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> reducer <span class="token keyword">as</span> formReducer <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;redux-form&apos;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">dva</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  extraReducers<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    form<span class="token punctuation">:</span> formReducer<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="extraenhancers"><a name="extraenhancers" class="anchor-navigation-ex-anchor" href="#extraenhancers"><i class="fa fa-link" aria-hidden="true"></i></a><a name="extraenhancers" class="plugin-anchor" href="#extraenhancers"><i class="fa fa-link" aria-hidden="true"></i></a><code>extraEnhancers</code></h4>
+<p>&#x6307;&#x5B9A;&#x989D;&#x5916;&#x7684; <a href="https://github.com/reactjs/redux/blob/master/docs/Glossary.md#store-enhancer" target="_blank">StoreEnhancer</a> &#xFF0C;&#x6BD4;&#x5982;&#x7ED3;&#x5408; <a href="https://github.com/rt2zz/redux-persist" target="_blank">redux-persist</a> &#x7684;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> persistStore<span class="token punctuation">,</span> autoRehydrate <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;redux-persist&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">dva</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  extraEnhancers<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token function">autoRehydrate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">persistStore</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>_store<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="appmodelmodel"><a name="appmodelmodel" class="anchor-navigation-ex-anchor" href="#appmodelmodel"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. app.model(model)</h3>
+<p>&#x6CE8;&#x518C; model&#xFF0C;&#x8BE6;&#x89C1;  <a href="#model">#Model</a>  &#x90E8;&#x5206;&#x3002;</p>
+<h3 id="appunmodelnamespace"><a name="appunmodelnamespace" class="anchor-navigation-ex-anchor" href="#appunmodelnamespace"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.4. app.unmodel(namespace)</h3>
+<p>&#x53D6;&#x6D88; model &#x6CE8;&#x518C;&#xFF0C;&#x6E05;&#x7406; reducers, effects &#x548C; subscriptions&#x3002;subscription &#x5982;&#x679C;&#x6CA1;&#x6709;&#x8FD4;&#x56DE; unlisten &#x51FD;&#x6570;&#xFF0C;&#x4F7F;&#x7528; <code>app.unmodel</code> &#x4F1A;&#x7ED9;&#x4E88;&#x8B66;&#x544A;&#x26A0;&#xFE0F;&#x3002;</p>
+<h3 id="approuter-history-app---routerconfig"><a name="approuter-history-app---routerconfig" class="anchor-navigation-ex-anchor" href="#approuter-history-app---routerconfig"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.5. app.router(({ history, app }) =&gt; RouterConfig)</h3>
+<p>&#x6CE8;&#x518C;&#x8DEF;&#x7531;&#x8868;&#x3002;</p>
+<p>&#x901A;&#x5E38;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> Router<span class="token punctuation">,</span> Route <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;dva/router&apos;</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">router</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">{</span> history <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>Router history<span class="token operator">=</span><span class="token punctuation">{</span>history<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">&quot;/&quot;</span> component<span class="token operator">=</span><span class="token punctuation">{</span>App<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Router<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x63A8;&#x8350;&#x628A;&#x8DEF;&#x7531;&#x4FE1;&#x606F;&#x62BD;&#x6210;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x6837;&#x7ED3;&#x5408; <a href="https://github.com/dvajs/babel-plugin-dva-hmr" target="_blank">babel-plugin-dva-hmr</a> &#x53EF;&#x5B9E;&#x73B0;&#x8DEF;&#x7531;&#x548C;&#x7EC4;&#x4EF6;&#x7684;&#x70ED;&#x52A0;&#x8F7D;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js">app<span class="token punctuation">.</span><span class="token function">router</span><span class="token punctuation">(</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;./router&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x800C;&#x6709;&#x4E9B;&#x573A;&#x666F;&#x53EF;&#x80FD;&#x4E0D;&#x4F7F;&#x7528;&#x8DEF;&#x7531;&#xFF0C;&#x6BD4;&#x5982;&#x591A;&#x9875;&#x5E94;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x8FD4;&#x56DE; JSX &#x5143;&#x7D20;&#x7684;&#x51FD;&#x6570;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js">app<span class="token punctuation">.</span><span class="token function">router</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token operator">&lt;</span>App <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="appstartselector"><a name="appstartselector" class="anchor-navigation-ex-anchor" href="#appstartselector"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.6. app.start(selector?)</h3>
+<p>&#x542F;&#x52A8;&#x5E94;&#x7528;&#x3002;<code>selector</code> &#x53EF;&#x9009;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709; <code>selector</code> &#x53C2;&#x6570;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE; JSX &#x5143;&#x7D20;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-js">app<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token string">&apos;#root&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x90A3;&#x4E48;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4E0D;&#x52A0; <code>selector</code>&#xFF1F;&#x5E38;&#x89C1;&#x573A;&#x666F;&#x6709;&#x6D4B;&#x8BD5;&#x3001;node &#x7AEF;&#x3001;react-native &#x548C; i18n &#x56FD;&#x9645;&#x5316;&#x652F;&#x6301;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x901A;&#x8FC7; react-intl &#x652F;&#x6301;&#x56FD;&#x9645;&#x5316;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> IntlProvider <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;react-intl&apos;</span><span class="token punctuation">;</span>
+<span class="token operator">...</span>
+<span class="token keyword">const</span> App <span class="token operator">=</span> app<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>IntlProvider<span class="token operator">&gt;</span><span class="token operator">&lt;</span>App <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>IntlProvider<span class="token operator">&gt;</span><span class="token punctuation">,</span> htmlElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="model"><a name="model" class="anchor-navigation-ex-anchor" href="#model"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Model</h2>
+<p>model &#x662F; dva &#x4E2D;&#x6700;&#x91CD;&#x8981;&#x7684;&#x6982;&#x5FF5;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x5178;&#x578B;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js">app<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  namespace<span class="token punctuation">:</span> <span class="token string">&apos;todo&apos;</span><span class="token punctuation">,</span>
+    state<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  reducers<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">add</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> <span class="token punctuation">{</span> payload<span class="token punctuation">:</span> todo <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// &#x4FDD;&#x5B58;&#x6570;&#x636E;&#x5230; state</span>
+      <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token operator">...</span>state<span class="token punctuation">,</span> todo<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  effects<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">*</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">{</span> payload<span class="token punctuation">:</span> todo <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> put<span class="token punctuation">,</span> call <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// &#x8C03;&#x7528; saveTodoToServer&#xFF0C;&#x6210;&#x529F;&#x540E;&#x89E6;&#x53D1; `add` action &#x4FDD;&#x5B58;&#x5230; state</span>
+      <span class="token keyword">yield</span> <span class="token function">call</span><span class="token punctuation">(</span>saveTodoToServer<span class="token punctuation">,</span> todo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">yield</span> <span class="token function">put</span><span class="token punctuation">(</span><span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">&apos;add&apos;</span><span class="token punctuation">,</span> payload<span class="token punctuation">:</span> todo <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  subscriptions<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">{</span> history<span class="token punctuation">,</span> dispatch <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// &#x76D1;&#x542C; history &#x53D8;&#x5316;&#xFF0C;&#x5F53;&#x8FDB;&#x5165; `/` &#x65F6;&#x89E6;&#x53D1; `load` action</span>
+      <span class="token keyword">return</span> history<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">{</span> pathname <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>pathname <span class="token operator">===</span> <span class="token string">&apos;/&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">&apos;load&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>model &#x5305;&#x542B; 5 &#x4E2A;&#x5C5E;&#x6027;&#xFF1A;</p>
+<h3 id="namespace"><a name="namespace" class="anchor-navigation-ex-anchor" href="#namespace"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. namespace</h3>
+<p>model &#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x662F;&#x4ED6;&#x5728;&#x5168;&#x5C40; state &#x4E0A;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x53EA;&#x80FD;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x901A;&#x8FC7; <code>.</code> &#x7684;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x591A;&#x5C42;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x3002;</p>
+<h3 id="state"><a name="state" class="anchor-navigation-ex-anchor" href="#state"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. state</h3>
+<p>&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x4F18;&#x5148;&#x7EA7;&#x4F4E;&#x4E8E;&#x4F20;&#x7ED9; <code>dva()</code> &#x7684; <code>opts.initialState</code>&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre class="language-"><code>const app = dva({
+  initialState: { count: 1 },
+});
+app.model({
+  namespace: &apos;count&apos;,
+  state: 0,
+});
+</code></pre><p>&#x6B64;&#x65F6;&#xFF0C;&#x5728; <code>app.start()</code> &#x540E; state.count &#x4E3A; 1 &#x3002;</p>
+<h3 id="reducers"><a name="reducers" class="anchor-navigation-ex-anchor" href="#reducers"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. reducers</h3>
+<p>&#x4EE5; key/value &#x683C;&#x5F0F;&#x5B9A;&#x4E49; reducer&#x3002;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x540C;&#x6B65;&#x64CD;&#x4F5C;&#xFF0C;&#x552F;&#x4E00;&#x53EF;&#x4EE5;&#x4FEE;&#x6539; <code>state</code> &#x7684;&#x5730;&#x65B9;&#x3002;&#x7531; <code>action</code> &#x89E6;&#x53D1;&#x3002;</p>
+<p>&#x683C;&#x5F0F;&#x4E3A; <code>(state, action) =&gt; newState</code> &#x6216; <code>[(state, action) =&gt; newState, enhancer]</code>&#x3002;</p>
+<p>&#x8BE6;&#x89C1;&#xFF1A; <a href="https://github.com/dvajs/dva/blob/master/packages/dva-core/test/reducers-test.js" target="_blank">https://github.com/dvajs/dva/blob/master/packages/dva-core/test/reducers-test.js</a></p>
+<h3 id="effects"><a name="effects" class="anchor-navigation-ex-anchor" href="#effects"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.4. effects</h3>
+<p>&#x4EE5; key/value &#x683C;&#x5F0F;&#x5B9A;&#x4E49; effect&#x3002;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x548C;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#xFF0C;&#x4E0D;&#x76F4;&#x63A5;&#x4FEE;&#x6539; <code>state</code>&#x3002;&#x7531; <code>action</code> &#x89E6;&#x53D1;&#xFF0C;&#x53EF;&#x4EE5;&#x89E6;&#x53D1; <code>action</code>&#xFF0C;&#x53EF;&#x4EE5;&#x548C;&#x670D;&#x52A1;&#x5668;&#x4EA4;&#x4E92;&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5168;&#x5C40; <code>state</code> &#x7684;&#x6570;&#x636E;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x683C;&#x5F0F;&#x4E3A; <code>*(action, effects) =&gt; void</code> &#x6216; <code>[*(action, effects) =&gt; void, { type }]</code>&#x3002;</p>
+<p>type &#x7C7B;&#x578B;&#x6709;&#xFF1A;</p>
+<ul>
+<li><code>takeEvery</code></li>
+<li><code>takeLatest</code></li>
+<li><code>throttle</code></li>
+<li><code>watcher</code></li>
+</ul>
+<p>&#x8BE6;&#x89C1;&#xFF1A;<a href="https://github.com/dvajs/dva/blob/master/packages/dva-core/test/effects-test.js" target="_blank">https://github.com/dvajs/dva/blob/master/packages/dva-core/test/effects-test.js</a></p>
+<h3 id="subscriptions"><a name="subscriptions" class="anchor-navigation-ex-anchor" href="#subscriptions"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.5. subscriptions</h3>
+<p>&#x4EE5; key/value &#x683C;&#x5F0F;&#x5B9A;&#x4E49; subscription&#x3002;subscription &#x662F;&#x8BA2;&#x9605;&#xFF0C;&#x7528;&#x4E8E;&#x8BA2;&#x9605;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x6E90;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;&#x9700;&#x8981; dispatch &#x76F8;&#x5E94;&#x7684; action&#x3002;&#x5728; <code>app.start()</code> &#x65F6;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x6570;&#x636E;&#x6E90;&#x53EF;&#x4EE5;&#x662F;&#x5F53;&#x524D;&#x7684;&#x65F6;&#x95F4;&#x3001;&#x670D;&#x52A1;&#x5668;&#x7684; websocket &#x8FDE;&#x63A5;&#x3001;keyboard &#x8F93;&#x5165;&#x3001;geolocation &#x53D8;&#x5316;&#x3001;history &#x8DEF;&#x7531;&#x53D8;&#x5316;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x683C;&#x5F0F;&#x4E3A; <code>({ dispatch, history }, done) =&gt; unlistenFunction</code>&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x8981;&#x4F7F;&#x7528; <code>app.unmodel()</code>&#xFF0C;subscription &#x5FC5;&#x987B;&#x8FD4;&#x56DE; unlisten &#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x53D6;&#x6D88;&#x6570;&#x636E;&#x8BA2;&#x9605;&#x3002;</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; tuzhu008 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-01-16 08:33:34
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="GettingStarted.html" class="navigation navigation-prev " aria-label="Previous page: 入门">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Concepts_zh-CN.html" class="navigation navigation-next " aria-label="Next page: Concepts">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"API","level":"8.4.2","depth":2,"next":{"title":"Concepts","level":"8.4.3","depth":2,"path":"Library/dva/docs/Concepts_zh-CN.md","ref":"Library/dva/docs/Concepts_zh-CN.md","articles":[]},"previous":{"title":"入门","level":"8.4.1","depth":2,"path":"Library/dva/docs/GettingStarted.md","ref":"Library/dva/docs/GettingStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchors","anchor-navigation-ex","favicon","copy-code-button","alerts","splitter","book-summary-scroll-position-saver","include-codeblock","ace","prism","prism-themes","-highlight","tbfed-pagefooter","github","sectionx","livereload"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy tuzhu008 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-atom-dark.css"]},"ace":{},"github":{"url":"https://github.com/tuzhu008"},"livereload":{},"book-summary-scroll-position-saver":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"night","family":"serif","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"favicon":{"shortcut":"assets/images/favicon.ico","bookmark":"assets/images/favicon.ico","appleTouch":"assets/images/apple-touch-icon.png","appleTouchMore":{"120x120":"assets/images/apple-touch-icon-120x120.png","180x180":"assets/images/apple-touch-icon-180x180.png"}},"prism-themes":{},"alerts":{},"expandable-chapters-small":{},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"acefull","theme":"tomorrow","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"tuzhu008","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js 及周边","language":"zh-hans","gitbook":"*","description":"React.js 自我学习"},"file":{"path":"Library/dva/docs/API_zh-CN.md","mtime":"2018-01-16T00:33:34.733Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-15T12:06:47.285Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
