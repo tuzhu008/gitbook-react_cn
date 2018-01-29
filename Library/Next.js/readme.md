@@ -244,13 +244,11 @@ export default class extends React.Component {
 }
 ```
 
-注意，当页面加载时加载数据时，我们使用的是一个 [`async`](https://zeit.co/blog/async-and-await) 静态方法的 `getInitialProps`。它可以异步地获取任何东西，他们被解析到一个 JavaScript 普通 `Object` ，这些对象填充了 `props`。
+注意，当页面加载时加载数据，我们使用的是一个 [`async`](https://zeit.co/blog/async-and-await) 静态方法的 `getInitialProps`。它可以异步地获取任何东西，他们被解析到一个 JavaScript 普通 `Object` ，这些对象填充了 `props`。
 
 从 `getInitialProps` 返回的数据在服务器渲染时被序列化，类似于  `JSON.stringify`。确保从 `getInitialProps` 中返回的对象是一个普通 `Object`，不使用`Date`、`Map` 或`Set`。
 
 对于初始页面加载，`getInitialProps` 只会在服务器上执行。只有通过 `Link` 组件或使用路由 API 导航到不同的路由时，才会在客户机上执行 `getInitialProps`。
-
-注意:不能在子组件中使用getinitial道具。只有在页面。
 
 _注意: `getInitialProps` **不能**在子组件中使用。仅在 `pages`。_
 
